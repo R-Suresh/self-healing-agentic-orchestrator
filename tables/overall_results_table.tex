@@ -1,0 +1,30 @@
+\begin{table}[H]
+\centering
+\caption{Overall reliability comparison across orchestration strategies over all runtime fault intensities.}
+\label{tab:overall_results}
+\small
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Method} 
+& \textbf{Success} 
+& \textbf{Recovery} 
+& \textbf{Silent} 
+& \textbf{Tool} 
+& \textbf{Verifier} 
+& \textbf{Cost} \\
+& \textbf{(\%)} 
+& \textbf{(\%)} 
+& \textbf{Failure (\%)} 
+& \textbf{Calls} 
+& \textbf{Calls} 
+& \textbf{Proxy} \\
+\midrule
+Static workflow & 70.1 & 0.0 & 0.0 & 1.61 & 0.00 & 1.61 \\
+Retry-only & 94.5 & 24.0 & 0.0 & 2.24 & 0.00 & 2.24 \\
+ReAct-style & 94.1 & 22.6 & 0.0 & 2.23 & 0.00 & 3.63 \\
+Full replanning & 93.8 & 21.0 & 0.0 & 2.23 & 0.00 & 3.63 \\
+Self-healing & 98.8 & 27.6 & 0.0 & 2.25 & 1.00 & 3.25 \\
+\bottomrule
+\end{tabular}
+\end{table}

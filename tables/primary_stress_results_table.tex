@@ -1,0 +1,18 @@
+\begin{table}[H]
+\centering
+\caption{Primary and high-stress runtime fault results. Primary settings use $\lambda \in \{0.0,0.1,0.2,0.3\}$; stress settings use $\lambda \in \{0.4,0.5\}$.}
+\label{tab:primary_stress_results}
+\small
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Method} & \textbf{Primary Success (\%)} & \textbf{Primary Cost} & \textbf{Stress Success (\%)} & \textbf{Stress Cost} \\
+\midrule
+Static workflow & 80.4 & 1.65 & 49.3 & 1.52 \\
+Retry-only & 98.4 & 2.04 & 86.7 & 2.65 \\
+ReAct-style & 98.3 & 3.26 & 85.7 & 4.38 \\
+Full replanning & 98.2 & 3.28 & 85.2 & 4.32 \\
+Self-healing & 99.6 & 3.03 & 97.3 & 3.68 \\
+\bottomrule
+\end{tabular}
+\end{table}

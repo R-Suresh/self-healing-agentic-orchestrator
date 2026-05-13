@@ -1,0 +1,21 @@
+\begin{table}[H]
+\centering
+\caption{Representative self-healing recovery traces extracted from Experiment~5.}
+\label{tab:case_study_traces}
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{tabularx}{\textwidth}{L{0.22\textwidth} L{0.22\textwidth} L{0.22\textwidth} Y}
+\toprule
+\textbf{Case} 
+& \textbf{Task and Category} 
+& \textbf{Fault} 
+& \textbf{Recovery Outcome} \\
+\midrule
+context_evidence_failure & \texttt{retrieval_001}; retrieval evidence & Stale context & Refresh retrieval; 1 verifier call; recovered: True \\
+\midrule
+runtime_tool_failure & \texttt{workflow_001}; multi step api workflow & Timeout & Retry with backoff; 1 verifier call; recovered: True \\
+\midrule
+semantic_silent_failure & \texttt{retrieval_002}; retrieval evidence & Semantic wrong output & Verification guided semantic recovery; 2 verifier calls; recovered: True \\
+\bottomrule
+\end{tabularx}
+\end{table}

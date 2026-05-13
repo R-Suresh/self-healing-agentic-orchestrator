@@ -1,0 +1,20 @@
+\begin{table}[H]
+\centering
+\caption{Task success rate by injected failure type and orchestration method. Results are computed only over executions in which at least one fault was actually injected.}
+\label{tab:failure_type_results}
+\footnotesize
+\setlength{\tabcolsep}{4.5pt}
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Failure Type} & \textbf{Static} & \textbf{Retry-Only} & \textbf{ReAct} & \textbf{Full Replan} & \textbf{Self-Healing} \\
+\midrule
+Contradictory evidence & 0.0 & 85.7 & 79.5 & 68.6 & 100.0 \\
+Malformed output & 0.0 & 68.8 & 81.1 & 71.1 & 98.2 \\
+Partial response & 0.0 & 59.0 & 61.1 & 61.1 & 89.7 \\
+Schema drift & 0.0 & 62.7 & 49.6 & 62.8 & 89.6 \\
+Stale context & 0.0 & 73.1 & 79.4 & 64.6 & 100.0 \\
+Timeout & 0.0 & 62.9 & 55.3 & 52.9 & 79.3 \\
+Unavailable tool & 0.0 & 64.4 & 50.9 & 44.0 & 75.3 \\
+\bottomrule
+\end{tabular}
+\end{table}
