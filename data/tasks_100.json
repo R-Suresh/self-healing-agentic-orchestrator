@@ -1,0 +1,3624 @@
+[
+  {
+    "task_id": "retrieval_001",
+    "category": "retrieval_evidence",
+    "user_request": "Find the current support policy for Product A and summarize it.",
+    "required_tools": [
+      "document_search"
+    ],
+    "expected_answer": "Product A has standard support for 12 months.",
+    "success_criteria": {
+      "must_include": [
+        "12 months",
+        "standard support"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "stale_context",
+      "malformed_output",
+      "partial_response"
+    ],
+    "execution_plan": [
+      {
+        "tool": "document_search",
+        "args": {
+          "query": "Product A support policy"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "retrieval_002",
+    "category": "retrieval_evidence",
+    "user_request": "Find the current refund window for Product B and summarize it.",
+    "required_tools": [
+      "document_search"
+    ],
+    "expected_answer": "Product B has a refund window of 30 days.",
+    "success_criteria": {
+      "must_include": [
+        "30 days",
+        "refund"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "stale_context",
+      "malformed_output",
+      "partial_response"
+    ],
+    "execution_plan": [
+      {
+        "tool": "document_search",
+        "args": {
+          "query": "Product B refund window"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "retrieval_003",
+    "category": "retrieval_evidence",
+    "user_request": "Find the current SLA for Enterprise customers and summarize it.",
+    "required_tools": [
+      "document_search"
+    ],
+    "expected_answer": "Enterprise customers receive priority support within 4 hours.",
+    "success_criteria": {
+      "must_include": [
+        "4 hours",
+        "priority support"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "stale_context",
+      "malformed_output",
+      "partial_response"
+    ],
+    "execution_plan": [
+      {
+        "tool": "document_search",
+        "args": {
+          "query": "enterprise SLA"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "retrieval_004",
+    "category": "retrieval_evidence",
+    "user_request": "Find the current support policy for Product A and summarize it.",
+    "required_tools": [
+      "document_search"
+    ],
+    "expected_answer": "Product A has standard support for 12 months.",
+    "success_criteria": {
+      "must_include": [
+        "12 months",
+        "standard support"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "stale_context",
+      "malformed_output",
+      "partial_response"
+    ],
+    "execution_plan": [
+      {
+        "tool": "document_search",
+        "args": {
+          "query": "Product A support policy"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "retrieval_005",
+    "category": "retrieval_evidence",
+    "user_request": "Find the current refund window for Product B and summarize it.",
+    "required_tools": [
+      "document_search"
+    ],
+    "expected_answer": "Product B has a refund window of 30 days.",
+    "success_criteria": {
+      "must_include": [
+        "30 days",
+        "refund"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "stale_context",
+      "malformed_output",
+      "partial_response"
+    ],
+    "execution_plan": [
+      {
+        "tool": "document_search",
+        "args": {
+          "query": "Product B refund window"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "retrieval_006",
+    "category": "retrieval_evidence",
+    "user_request": "Find the current SLA for Enterprise customers and summarize it.",
+    "required_tools": [
+      "document_search"
+    ],
+    "expected_answer": "Enterprise customers receive priority support within 4 hours.",
+    "success_criteria": {
+      "must_include": [
+        "4 hours",
+        "priority support"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "stale_context",
+      "malformed_output",
+      "partial_response"
+    ],
+    "execution_plan": [
+      {
+        "tool": "document_search",
+        "args": {
+          "query": "enterprise SLA"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "retrieval_007",
+    "category": "retrieval_evidence",
+    "user_request": "Find the current support policy for Product A and summarize it.",
+    "required_tools": [
+      "document_search"
+    ],
+    "expected_answer": "Product A has standard support for 12 months.",
+    "success_criteria": {
+      "must_include": [
+        "12 months",
+        "standard support"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "stale_context",
+      "malformed_output",
+      "partial_response"
+    ],
+    "execution_plan": [
+      {
+        "tool": "document_search",
+        "args": {
+          "query": "Product A support policy"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "retrieval_008",
+    "category": "retrieval_evidence",
+    "user_request": "Find the current refund window for Product B and summarize it.",
+    "required_tools": [
+      "document_search"
+    ],
+    "expected_answer": "Product B has a refund window of 30 days.",
+    "success_criteria": {
+      "must_include": [
+        "30 days",
+        "refund"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "stale_context",
+      "malformed_output",
+      "partial_response"
+    ],
+    "execution_plan": [
+      {
+        "tool": "document_search",
+        "args": {
+          "query": "Product B refund window"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "retrieval_009",
+    "category": "retrieval_evidence",
+    "user_request": "Find the current SLA for Enterprise customers and summarize it.",
+    "required_tools": [
+      "document_search"
+    ],
+    "expected_answer": "Enterprise customers receive priority support within 4 hours.",
+    "success_criteria": {
+      "must_include": [
+        "4 hours",
+        "priority support"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "stale_context",
+      "malformed_output",
+      "partial_response"
+    ],
+    "execution_plan": [
+      {
+        "tool": "document_search",
+        "args": {
+          "query": "enterprise SLA"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "retrieval_010",
+    "category": "retrieval_evidence",
+    "user_request": "Find the current support policy for Product A and summarize it.",
+    "required_tools": [
+      "document_search"
+    ],
+    "expected_answer": "Product A has standard support for 12 months.",
+    "success_criteria": {
+      "must_include": [
+        "12 months",
+        "standard support"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "stale_context",
+      "malformed_output",
+      "partial_response"
+    ],
+    "execution_plan": [
+      {
+        "tool": "document_search",
+        "args": {
+          "query": "Product A support policy"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "retrieval_011",
+    "category": "retrieval_evidence",
+    "user_request": "Find the current refund window for Product B and summarize it.",
+    "required_tools": [
+      "document_search"
+    ],
+    "expected_answer": "Product B has a refund window of 30 days.",
+    "success_criteria": {
+      "must_include": [
+        "30 days",
+        "refund"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "stale_context",
+      "malformed_output",
+      "partial_response"
+    ],
+    "execution_plan": [
+      {
+        "tool": "document_search",
+        "args": {
+          "query": "Product B refund window"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "retrieval_012",
+    "category": "retrieval_evidence",
+    "user_request": "Find the current SLA for Enterprise customers and summarize it.",
+    "required_tools": [
+      "document_search"
+    ],
+    "expected_answer": "Enterprise customers receive priority support within 4 hours.",
+    "success_criteria": {
+      "must_include": [
+        "4 hours",
+        "priority support"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "stale_context",
+      "malformed_output",
+      "partial_response"
+    ],
+    "execution_plan": [
+      {
+        "tool": "document_search",
+        "args": {
+          "query": "enterprise SLA"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "retrieval_013",
+    "category": "retrieval_evidence",
+    "user_request": "Find the current support policy for Product A and summarize it.",
+    "required_tools": [
+      "document_search"
+    ],
+    "expected_answer": "Product A has standard support for 12 months.",
+    "success_criteria": {
+      "must_include": [
+        "12 months",
+        "standard support"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "stale_context",
+      "malformed_output",
+      "partial_response"
+    ],
+    "execution_plan": [
+      {
+        "tool": "document_search",
+        "args": {
+          "query": "Product A support policy"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "retrieval_014",
+    "category": "retrieval_evidence",
+    "user_request": "Find the current refund window for Product B and summarize it.",
+    "required_tools": [
+      "document_search"
+    ],
+    "expected_answer": "Product B has a refund window of 30 days.",
+    "success_criteria": {
+      "must_include": [
+        "30 days",
+        "refund"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "stale_context",
+      "malformed_output",
+      "partial_response"
+    ],
+    "execution_plan": [
+      {
+        "tool": "document_search",
+        "args": {
+          "query": "Product B refund window"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "retrieval_015",
+    "category": "retrieval_evidence",
+    "user_request": "Find the current SLA for Enterprise customers and summarize it.",
+    "required_tools": [
+      "document_search"
+    ],
+    "expected_answer": "Enterprise customers receive priority support within 4 hours.",
+    "success_criteria": {
+      "must_include": [
+        "4 hours",
+        "priority support"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "stale_context",
+      "malformed_output",
+      "partial_response"
+    ],
+    "execution_plan": [
+      {
+        "tool": "document_search",
+        "args": {
+          "query": "enterprise SLA"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "retrieval_016",
+    "category": "retrieval_evidence",
+    "user_request": "Find the current support policy for Product A and summarize it.",
+    "required_tools": [
+      "document_search"
+    ],
+    "expected_answer": "Product A has standard support for 12 months.",
+    "success_criteria": {
+      "must_include": [
+        "12 months",
+        "standard support"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "stale_context",
+      "malformed_output",
+      "partial_response"
+    ],
+    "execution_plan": [
+      {
+        "tool": "document_search",
+        "args": {
+          "query": "Product A support policy"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "retrieval_017",
+    "category": "retrieval_evidence",
+    "user_request": "Find the current refund window for Product B and summarize it.",
+    "required_tools": [
+      "document_search"
+    ],
+    "expected_answer": "Product B has a refund window of 30 days.",
+    "success_criteria": {
+      "must_include": [
+        "30 days",
+        "refund"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "stale_context",
+      "malformed_output",
+      "partial_response"
+    ],
+    "execution_plan": [
+      {
+        "tool": "document_search",
+        "args": {
+          "query": "Product B refund window"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "retrieval_018",
+    "category": "retrieval_evidence",
+    "user_request": "Find the current SLA for Enterprise customers and summarize it.",
+    "required_tools": [
+      "document_search"
+    ],
+    "expected_answer": "Enterprise customers receive priority support within 4 hours.",
+    "success_criteria": {
+      "must_include": [
+        "4 hours",
+        "priority support"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "stale_context",
+      "malformed_output",
+      "partial_response"
+    ],
+    "execution_plan": [
+      {
+        "tool": "document_search",
+        "args": {
+          "query": "enterprise SLA"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "retrieval_019",
+    "category": "retrieval_evidence",
+    "user_request": "Find the current support policy for Product A and summarize it.",
+    "required_tools": [
+      "document_search"
+    ],
+    "expected_answer": "Product A has standard support for 12 months.",
+    "success_criteria": {
+      "must_include": [
+        "12 months",
+        "standard support"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "stale_context",
+      "malformed_output",
+      "partial_response"
+    ],
+    "execution_plan": [
+      {
+        "tool": "document_search",
+        "args": {
+          "query": "Product A support policy"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "retrieval_020",
+    "category": "retrieval_evidence",
+    "user_request": "Find the current refund window for Product B and summarize it.",
+    "required_tools": [
+      "document_search"
+    ],
+    "expected_answer": "Product B has a refund window of 30 days.",
+    "success_criteria": {
+      "must_include": [
+        "30 days",
+        "refund"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "stale_context",
+      "malformed_output",
+      "partial_response"
+    ],
+    "execution_plan": [
+      {
+        "tool": "document_search",
+        "args": {
+          "query": "Product B refund window"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "workflow_001",
+    "category": "multi_step_api_workflow",
+    "user_request": "Complete multi-step workflow task 1 using the available simulated APIs.",
+    "required_tools": [
+      "order_lookup",
+      "customer_lookup"
+    ],
+    "expected_answer": "Order O100 belongs to customer C001, who is enterprise tier.",
+    "success_criteria": {
+      "must_include": [
+        "O100",
+        "C001",
+        "enterprise"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "unavailable_tool",
+      "schema_drift",
+      "partial_response"
+    ],
+    "execution_plan": [
+      {
+        "tool": "order_lookup",
+        "args": {
+          "order_id": "O100"
+        },
+        "fault_eligible": true
+      },
+      {
+        "tool": "customer_lookup",
+        "args": {
+          "customer_id": "C001"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "workflow_002",
+    "category": "multi_step_api_workflow",
+    "user_request": "Complete multi-step workflow task 2 using the available simulated APIs.",
+    "required_tools": [
+      "order_lookup",
+      "customer_lookup"
+    ],
+    "expected_answer": "Order O200 belongs to customer C002, who is standard tier.",
+    "success_criteria": {
+      "must_include": [
+        "O200",
+        "C002",
+        "standard"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "unavailable_tool",
+      "schema_drift",
+      "partial_response"
+    ],
+    "execution_plan": [
+      {
+        "tool": "order_lookup",
+        "args": {
+          "order_id": "O200"
+        },
+        "fault_eligible": true
+      },
+      {
+        "tool": "customer_lookup",
+        "args": {
+          "customer_id": "C002"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "workflow_003",
+    "category": "multi_step_api_workflow",
+    "user_request": "Complete multi-step workflow task 3 using the available simulated APIs.",
+    "required_tools": [
+      "inventory_lookup",
+      "shipping_estimator"
+    ],
+    "expected_answer": "Product A is in stock and express shipping to the US takes 2 business days.",
+    "success_criteria": {
+      "must_include": [
+        "Product A",
+        "in stock",
+        "2 business days"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "unavailable_tool",
+      "schema_drift",
+      "partial_response"
+    ],
+    "execution_plan": [
+      {
+        "tool": "inventory_lookup",
+        "args": {
+          "product_name": "Product A"
+        },
+        "fault_eligible": true
+      },
+      {
+        "tool": "shipping_estimator",
+        "args": {
+          "region": "US",
+          "speed": "express"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "workflow_004",
+    "category": "multi_step_api_workflow",
+    "user_request": "Complete multi-step workflow task 4 using the available simulated APIs.",
+    "required_tools": [
+      "inventory_lookup",
+      "shipping_estimator"
+    ],
+    "expected_answer": "Product B is in stock and standard shipping to the EU takes 5 business days.",
+    "success_criteria": {
+      "must_include": [
+        "Product B",
+        "in stock",
+        "5 business days"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "unavailable_tool",
+      "schema_drift",
+      "partial_response"
+    ],
+    "execution_plan": [
+      {
+        "tool": "inventory_lookup",
+        "args": {
+          "product_name": "Product B"
+        },
+        "fault_eligible": true
+      },
+      {
+        "tool": "shipping_estimator",
+        "args": {
+          "region": "EU",
+          "speed": "standard"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "workflow_005",
+    "category": "multi_step_api_workflow",
+    "user_request": "Complete multi-step workflow task 5 using the available simulated APIs.",
+    "required_tools": [
+      "order_lookup",
+      "customer_lookup"
+    ],
+    "expected_answer": "Order O100 belongs to customer C001, who is enterprise tier.",
+    "success_criteria": {
+      "must_include": [
+        "O100",
+        "C001",
+        "enterprise"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "unavailable_tool",
+      "schema_drift",
+      "partial_response"
+    ],
+    "execution_plan": [
+      {
+        "tool": "order_lookup",
+        "args": {
+          "order_id": "O100"
+        },
+        "fault_eligible": true
+      },
+      {
+        "tool": "customer_lookup",
+        "args": {
+          "customer_id": "C001"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "workflow_006",
+    "category": "multi_step_api_workflow",
+    "user_request": "Complete multi-step workflow task 6 using the available simulated APIs.",
+    "required_tools": [
+      "order_lookup",
+      "customer_lookup"
+    ],
+    "expected_answer": "Order O200 belongs to customer C002, who is standard tier.",
+    "success_criteria": {
+      "must_include": [
+        "O200",
+        "C002",
+        "standard"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "unavailable_tool",
+      "schema_drift",
+      "partial_response"
+    ],
+    "execution_plan": [
+      {
+        "tool": "order_lookup",
+        "args": {
+          "order_id": "O200"
+        },
+        "fault_eligible": true
+      },
+      {
+        "tool": "customer_lookup",
+        "args": {
+          "customer_id": "C002"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "workflow_007",
+    "category": "multi_step_api_workflow",
+    "user_request": "Complete multi-step workflow task 7 using the available simulated APIs.",
+    "required_tools": [
+      "inventory_lookup",
+      "shipping_estimator"
+    ],
+    "expected_answer": "Product A is in stock and express shipping to the US takes 2 business days.",
+    "success_criteria": {
+      "must_include": [
+        "Product A",
+        "in stock",
+        "2 business days"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "unavailable_tool",
+      "schema_drift",
+      "partial_response"
+    ],
+    "execution_plan": [
+      {
+        "tool": "inventory_lookup",
+        "args": {
+          "product_name": "Product A"
+        },
+        "fault_eligible": true
+      },
+      {
+        "tool": "shipping_estimator",
+        "args": {
+          "region": "US",
+          "speed": "express"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "workflow_008",
+    "category": "multi_step_api_workflow",
+    "user_request": "Complete multi-step workflow task 8 using the available simulated APIs.",
+    "required_tools": [
+      "inventory_lookup",
+      "shipping_estimator"
+    ],
+    "expected_answer": "Product B is in stock and standard shipping to the EU takes 5 business days.",
+    "success_criteria": {
+      "must_include": [
+        "Product B",
+        "in stock",
+        "5 business days"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "unavailable_tool",
+      "schema_drift",
+      "partial_response"
+    ],
+    "execution_plan": [
+      {
+        "tool": "inventory_lookup",
+        "args": {
+          "product_name": "Product B"
+        },
+        "fault_eligible": true
+      },
+      {
+        "tool": "shipping_estimator",
+        "args": {
+          "region": "EU",
+          "speed": "standard"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "workflow_009",
+    "category": "multi_step_api_workflow",
+    "user_request": "Complete multi-step workflow task 9 using the available simulated APIs.",
+    "required_tools": [
+      "order_lookup",
+      "customer_lookup"
+    ],
+    "expected_answer": "Order O100 belongs to customer C001, who is enterprise tier.",
+    "success_criteria": {
+      "must_include": [
+        "O100",
+        "C001",
+        "enterprise"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "unavailable_tool",
+      "schema_drift",
+      "partial_response"
+    ],
+    "execution_plan": [
+      {
+        "tool": "order_lookup",
+        "args": {
+          "order_id": "O100"
+        },
+        "fault_eligible": true
+      },
+      {
+        "tool": "customer_lookup",
+        "args": {
+          "customer_id": "C001"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "workflow_010",
+    "category": "multi_step_api_workflow",
+    "user_request": "Complete multi-step workflow task 10 using the available simulated APIs.",
+    "required_tools": [
+      "order_lookup",
+      "customer_lookup"
+    ],
+    "expected_answer": "Order O200 belongs to customer C002, who is standard tier.",
+    "success_criteria": {
+      "must_include": [
+        "O200",
+        "C002",
+        "standard"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "unavailable_tool",
+      "schema_drift",
+      "partial_response"
+    ],
+    "execution_plan": [
+      {
+        "tool": "order_lookup",
+        "args": {
+          "order_id": "O200"
+        },
+        "fault_eligible": true
+      },
+      {
+        "tool": "customer_lookup",
+        "args": {
+          "customer_id": "C002"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "workflow_011",
+    "category": "multi_step_api_workflow",
+    "user_request": "Complete multi-step workflow task 11 using the available simulated APIs.",
+    "required_tools": [
+      "inventory_lookup",
+      "shipping_estimator"
+    ],
+    "expected_answer": "Product A is in stock and express shipping to the US takes 2 business days.",
+    "success_criteria": {
+      "must_include": [
+        "Product A",
+        "in stock",
+        "2 business days"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "unavailable_tool",
+      "schema_drift",
+      "partial_response"
+    ],
+    "execution_plan": [
+      {
+        "tool": "inventory_lookup",
+        "args": {
+          "product_name": "Product A"
+        },
+        "fault_eligible": true
+      },
+      {
+        "tool": "shipping_estimator",
+        "args": {
+          "region": "US",
+          "speed": "express"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "workflow_012",
+    "category": "multi_step_api_workflow",
+    "user_request": "Complete multi-step workflow task 12 using the available simulated APIs.",
+    "required_tools": [
+      "inventory_lookup",
+      "shipping_estimator"
+    ],
+    "expected_answer": "Product B is in stock and standard shipping to the EU takes 5 business days.",
+    "success_criteria": {
+      "must_include": [
+        "Product B",
+        "in stock",
+        "5 business days"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "unavailable_tool",
+      "schema_drift",
+      "partial_response"
+    ],
+    "execution_plan": [
+      {
+        "tool": "inventory_lookup",
+        "args": {
+          "product_name": "Product B"
+        },
+        "fault_eligible": true
+      },
+      {
+        "tool": "shipping_estimator",
+        "args": {
+          "region": "EU",
+          "speed": "standard"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "workflow_013",
+    "category": "multi_step_api_workflow",
+    "user_request": "Complete multi-step workflow task 13 using the available simulated APIs.",
+    "required_tools": [
+      "order_lookup",
+      "customer_lookup"
+    ],
+    "expected_answer": "Order O100 belongs to customer C001, who is enterprise tier.",
+    "success_criteria": {
+      "must_include": [
+        "O100",
+        "C001",
+        "enterprise"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "unavailable_tool",
+      "schema_drift",
+      "partial_response"
+    ],
+    "execution_plan": [
+      {
+        "tool": "order_lookup",
+        "args": {
+          "order_id": "O100"
+        },
+        "fault_eligible": true
+      },
+      {
+        "tool": "customer_lookup",
+        "args": {
+          "customer_id": "C001"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "workflow_014",
+    "category": "multi_step_api_workflow",
+    "user_request": "Complete multi-step workflow task 14 using the available simulated APIs.",
+    "required_tools": [
+      "order_lookup",
+      "customer_lookup"
+    ],
+    "expected_answer": "Order O200 belongs to customer C002, who is standard tier.",
+    "success_criteria": {
+      "must_include": [
+        "O200",
+        "C002",
+        "standard"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "unavailable_tool",
+      "schema_drift",
+      "partial_response"
+    ],
+    "execution_plan": [
+      {
+        "tool": "order_lookup",
+        "args": {
+          "order_id": "O200"
+        },
+        "fault_eligible": true
+      },
+      {
+        "tool": "customer_lookup",
+        "args": {
+          "customer_id": "C002"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "workflow_015",
+    "category": "multi_step_api_workflow",
+    "user_request": "Complete multi-step workflow task 15 using the available simulated APIs.",
+    "required_tools": [
+      "inventory_lookup",
+      "shipping_estimator"
+    ],
+    "expected_answer": "Product A is in stock and express shipping to the US takes 2 business days.",
+    "success_criteria": {
+      "must_include": [
+        "Product A",
+        "in stock",
+        "2 business days"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "unavailable_tool",
+      "schema_drift",
+      "partial_response"
+    ],
+    "execution_plan": [
+      {
+        "tool": "inventory_lookup",
+        "args": {
+          "product_name": "Product A"
+        },
+        "fault_eligible": true
+      },
+      {
+        "tool": "shipping_estimator",
+        "args": {
+          "region": "US",
+          "speed": "express"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "workflow_016",
+    "category": "multi_step_api_workflow",
+    "user_request": "Complete multi-step workflow task 16 using the available simulated APIs.",
+    "required_tools": [
+      "inventory_lookup",
+      "shipping_estimator"
+    ],
+    "expected_answer": "Product B is in stock and standard shipping to the EU takes 5 business days.",
+    "success_criteria": {
+      "must_include": [
+        "Product B",
+        "in stock",
+        "5 business days"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "unavailable_tool",
+      "schema_drift",
+      "partial_response"
+    ],
+    "execution_plan": [
+      {
+        "tool": "inventory_lookup",
+        "args": {
+          "product_name": "Product B"
+        },
+        "fault_eligible": true
+      },
+      {
+        "tool": "shipping_estimator",
+        "args": {
+          "region": "EU",
+          "speed": "standard"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "workflow_017",
+    "category": "multi_step_api_workflow",
+    "user_request": "Complete multi-step workflow task 17 using the available simulated APIs.",
+    "required_tools": [
+      "order_lookup",
+      "customer_lookup"
+    ],
+    "expected_answer": "Order O100 belongs to customer C001, who is enterprise tier.",
+    "success_criteria": {
+      "must_include": [
+        "O100",
+        "C001",
+        "enterprise"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "unavailable_tool",
+      "schema_drift",
+      "partial_response"
+    ],
+    "execution_plan": [
+      {
+        "tool": "order_lookup",
+        "args": {
+          "order_id": "O100"
+        },
+        "fault_eligible": true
+      },
+      {
+        "tool": "customer_lookup",
+        "args": {
+          "customer_id": "C001"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "workflow_018",
+    "category": "multi_step_api_workflow",
+    "user_request": "Complete multi-step workflow task 18 using the available simulated APIs.",
+    "required_tools": [
+      "order_lookup",
+      "customer_lookup"
+    ],
+    "expected_answer": "Order O200 belongs to customer C002, who is standard tier.",
+    "success_criteria": {
+      "must_include": [
+        "O200",
+        "C002",
+        "standard"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "unavailable_tool",
+      "schema_drift",
+      "partial_response"
+    ],
+    "execution_plan": [
+      {
+        "tool": "order_lookup",
+        "args": {
+          "order_id": "O200"
+        },
+        "fault_eligible": true
+      },
+      {
+        "tool": "customer_lookup",
+        "args": {
+          "customer_id": "C002"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "workflow_019",
+    "category": "multi_step_api_workflow",
+    "user_request": "Complete multi-step workflow task 19 using the available simulated APIs.",
+    "required_tools": [
+      "inventory_lookup",
+      "shipping_estimator"
+    ],
+    "expected_answer": "Product A is in stock and express shipping to the US takes 2 business days.",
+    "success_criteria": {
+      "must_include": [
+        "Product A",
+        "in stock",
+        "2 business days"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "unavailable_tool",
+      "schema_drift",
+      "partial_response"
+    ],
+    "execution_plan": [
+      {
+        "tool": "inventory_lookup",
+        "args": {
+          "product_name": "Product A"
+        },
+        "fault_eligible": true
+      },
+      {
+        "tool": "shipping_estimator",
+        "args": {
+          "region": "US",
+          "speed": "express"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "workflow_020",
+    "category": "multi_step_api_workflow",
+    "user_request": "Complete multi-step workflow task 20 using the available simulated APIs.",
+    "required_tools": [
+      "inventory_lookup",
+      "shipping_estimator"
+    ],
+    "expected_answer": "Product B is in stock and standard shipping to the EU takes 5 business days.",
+    "success_criteria": {
+      "must_include": [
+        "Product B",
+        "in stock",
+        "5 business days"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "unavailable_tool",
+      "schema_drift",
+      "partial_response"
+    ],
+    "execution_plan": [
+      {
+        "tool": "inventory_lookup",
+        "args": {
+          "product_name": "Product B"
+        },
+        "fault_eligible": true
+      },
+      {
+        "tool": "shipping_estimator",
+        "args": {
+          "region": "EU",
+          "speed": "standard"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "calc_001",
+    "category": "calculation_verification",
+    "user_request": "Calculate `120 * 1.08` and verify the result.",
+    "required_tools": [
+      "calculator"
+    ],
+    "expected_answer": "The total monthly cost is 129.6.",
+    "success_criteria": {
+      "must_include": [
+        "129.6"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "malformed_output",
+      "partial_response",
+      "schema_drift"
+    ],
+    "execution_plan": [
+      {
+        "tool": "calculator",
+        "args": {
+          "expression": "120 * 1.08"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "calc_002",
+    "category": "calculation_verification",
+    "user_request": "Calculate `75 * 12` and verify the result.",
+    "required_tools": [
+      "calculator"
+    ],
+    "expected_answer": "The annual cost is 900.",
+    "success_criteria": {
+      "must_include": [
+        "900"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "malformed_output",
+      "partial_response",
+      "schema_drift"
+    ],
+    "execution_plan": [
+      {
+        "tool": "calculator",
+        "args": {
+          "expression": "75 * 12"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "calc_003",
+    "category": "calculation_verification",
+    "user_request": "Calculate `250 * 0.15` and verify the result.",
+    "required_tools": [
+      "calculator"
+    ],
+    "expected_answer": "The discount amount is 37.5.",
+    "success_criteria": {
+      "must_include": [
+        "37.5"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "malformed_output",
+      "partial_response",
+      "schema_drift"
+    ],
+    "execution_plan": [
+      {
+        "tool": "calculator",
+        "args": {
+          "expression": "250 * 0.15"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "calc_004",
+    "category": "calculation_verification",
+    "user_request": "Calculate `499 + 25` and verify the result.",
+    "required_tools": [
+      "calculator"
+    ],
+    "expected_answer": "The final total is 524.",
+    "success_criteria": {
+      "must_include": [
+        "524"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "malformed_output",
+      "partial_response",
+      "schema_drift"
+    ],
+    "execution_plan": [
+      {
+        "tool": "calculator",
+        "args": {
+          "expression": "499 + 25"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "calc_005",
+    "category": "calculation_verification",
+    "user_request": "Calculate `1000 / 4` and verify the result.",
+    "required_tools": [
+      "calculator"
+    ],
+    "expected_answer": "The quarterly amount is 250.0.",
+    "success_criteria": {
+      "must_include": [
+        "250.0"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "malformed_output",
+      "partial_response",
+      "schema_drift"
+    ],
+    "execution_plan": [
+      {
+        "tool": "calculator",
+        "args": {
+          "expression": "1000 / 4"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "calc_006",
+    "category": "calculation_verification",
+    "user_request": "Calculate `120 * 1.08` and verify the result.",
+    "required_tools": [
+      "calculator"
+    ],
+    "expected_answer": "The total monthly cost is 129.6.",
+    "success_criteria": {
+      "must_include": [
+        "129.6"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "malformed_output",
+      "partial_response",
+      "schema_drift"
+    ],
+    "execution_plan": [
+      {
+        "tool": "calculator",
+        "args": {
+          "expression": "120 * 1.08"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "calc_007",
+    "category": "calculation_verification",
+    "user_request": "Calculate `75 * 12` and verify the result.",
+    "required_tools": [
+      "calculator"
+    ],
+    "expected_answer": "The annual cost is 900.",
+    "success_criteria": {
+      "must_include": [
+        "900"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "malformed_output",
+      "partial_response",
+      "schema_drift"
+    ],
+    "execution_plan": [
+      {
+        "tool": "calculator",
+        "args": {
+          "expression": "75 * 12"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "calc_008",
+    "category": "calculation_verification",
+    "user_request": "Calculate `250 * 0.15` and verify the result.",
+    "required_tools": [
+      "calculator"
+    ],
+    "expected_answer": "The discount amount is 37.5.",
+    "success_criteria": {
+      "must_include": [
+        "37.5"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "malformed_output",
+      "partial_response",
+      "schema_drift"
+    ],
+    "execution_plan": [
+      {
+        "tool": "calculator",
+        "args": {
+          "expression": "250 * 0.15"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "calc_009",
+    "category": "calculation_verification",
+    "user_request": "Calculate `499 + 25` and verify the result.",
+    "required_tools": [
+      "calculator"
+    ],
+    "expected_answer": "The final total is 524.",
+    "success_criteria": {
+      "must_include": [
+        "524"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "malformed_output",
+      "partial_response",
+      "schema_drift"
+    ],
+    "execution_plan": [
+      {
+        "tool": "calculator",
+        "args": {
+          "expression": "499 + 25"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "calc_010",
+    "category": "calculation_verification",
+    "user_request": "Calculate `1000 / 4` and verify the result.",
+    "required_tools": [
+      "calculator"
+    ],
+    "expected_answer": "The quarterly amount is 250.0.",
+    "success_criteria": {
+      "must_include": [
+        "250.0"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "malformed_output",
+      "partial_response",
+      "schema_drift"
+    ],
+    "execution_plan": [
+      {
+        "tool": "calculator",
+        "args": {
+          "expression": "1000 / 4"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "calc_011",
+    "category": "calculation_verification",
+    "user_request": "Calculate `120 * 1.08` and verify the result.",
+    "required_tools": [
+      "calculator"
+    ],
+    "expected_answer": "The total monthly cost is 129.6.",
+    "success_criteria": {
+      "must_include": [
+        "129.6"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "malformed_output",
+      "partial_response",
+      "schema_drift"
+    ],
+    "execution_plan": [
+      {
+        "tool": "calculator",
+        "args": {
+          "expression": "120 * 1.08"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "calc_012",
+    "category": "calculation_verification",
+    "user_request": "Calculate `75 * 12` and verify the result.",
+    "required_tools": [
+      "calculator"
+    ],
+    "expected_answer": "The annual cost is 900.",
+    "success_criteria": {
+      "must_include": [
+        "900"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "malformed_output",
+      "partial_response",
+      "schema_drift"
+    ],
+    "execution_plan": [
+      {
+        "tool": "calculator",
+        "args": {
+          "expression": "75 * 12"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "calc_013",
+    "category": "calculation_verification",
+    "user_request": "Calculate `250 * 0.15` and verify the result.",
+    "required_tools": [
+      "calculator"
+    ],
+    "expected_answer": "The discount amount is 37.5.",
+    "success_criteria": {
+      "must_include": [
+        "37.5"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "malformed_output",
+      "partial_response",
+      "schema_drift"
+    ],
+    "execution_plan": [
+      {
+        "tool": "calculator",
+        "args": {
+          "expression": "250 * 0.15"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "calc_014",
+    "category": "calculation_verification",
+    "user_request": "Calculate `499 + 25` and verify the result.",
+    "required_tools": [
+      "calculator"
+    ],
+    "expected_answer": "The final total is 524.",
+    "success_criteria": {
+      "must_include": [
+        "524"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "malformed_output",
+      "partial_response",
+      "schema_drift"
+    ],
+    "execution_plan": [
+      {
+        "tool": "calculator",
+        "args": {
+          "expression": "499 + 25"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "calc_015",
+    "category": "calculation_verification",
+    "user_request": "Calculate `1000 / 4` and verify the result.",
+    "required_tools": [
+      "calculator"
+    ],
+    "expected_answer": "The quarterly amount is 250.0.",
+    "success_criteria": {
+      "must_include": [
+        "250.0"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "malformed_output",
+      "partial_response",
+      "schema_drift"
+    ],
+    "execution_plan": [
+      {
+        "tool": "calculator",
+        "args": {
+          "expression": "1000 / 4"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "calc_016",
+    "category": "calculation_verification",
+    "user_request": "Calculate `120 * 1.08` and verify the result.",
+    "required_tools": [
+      "calculator"
+    ],
+    "expected_answer": "The total monthly cost is 129.6.",
+    "success_criteria": {
+      "must_include": [
+        "129.6"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "malformed_output",
+      "partial_response",
+      "schema_drift"
+    ],
+    "execution_plan": [
+      {
+        "tool": "calculator",
+        "args": {
+          "expression": "120 * 1.08"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "calc_017",
+    "category": "calculation_verification",
+    "user_request": "Calculate `75 * 12` and verify the result.",
+    "required_tools": [
+      "calculator"
+    ],
+    "expected_answer": "The annual cost is 900.",
+    "success_criteria": {
+      "must_include": [
+        "900"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "malformed_output",
+      "partial_response",
+      "schema_drift"
+    ],
+    "execution_plan": [
+      {
+        "tool": "calculator",
+        "args": {
+          "expression": "75 * 12"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "calc_018",
+    "category": "calculation_verification",
+    "user_request": "Calculate `250 * 0.15` and verify the result.",
+    "required_tools": [
+      "calculator"
+    ],
+    "expected_answer": "The discount amount is 37.5.",
+    "success_criteria": {
+      "must_include": [
+        "37.5"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "malformed_output",
+      "partial_response",
+      "schema_drift"
+    ],
+    "execution_plan": [
+      {
+        "tool": "calculator",
+        "args": {
+          "expression": "250 * 0.15"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "calc_019",
+    "category": "calculation_verification",
+    "user_request": "Calculate `499 + 25` and verify the result.",
+    "required_tools": [
+      "calculator"
+    ],
+    "expected_answer": "The final total is 524.",
+    "success_criteria": {
+      "must_include": [
+        "524"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "malformed_output",
+      "partial_response",
+      "schema_drift"
+    ],
+    "execution_plan": [
+      {
+        "tool": "calculator",
+        "args": {
+          "expression": "499 + 25"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "calc_020",
+    "category": "calculation_verification",
+    "user_request": "Calculate `1000 / 4` and verify the result.",
+    "required_tools": [
+      "calculator"
+    ],
+    "expected_answer": "The quarterly amount is 250.0.",
+    "success_criteria": {
+      "must_include": [
+        "250.0"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "malformed_output",
+      "partial_response",
+      "schema_drift"
+    ],
+    "execution_plan": [
+      {
+        "tool": "calculator",
+        "args": {
+          "expression": "1000 / 4"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "planning_001",
+    "category": "planning_tool_selection",
+    "user_request": "Choose the correct tool to check whether Product A is available in inventory.",
+    "required_tools": [
+      "inventory_lookup",
+      "tool_registry"
+    ],
+    "expected_answer": "Product A is available with stock of 15.",
+    "success_criteria": {
+      "must_include": [
+        "Product A",
+        "15"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "unavailable_tool",
+      "malformed_output",
+      "schema_drift"
+    ],
+    "execution_plan": [
+      {
+        "tool": "tool_registry",
+        "args": {
+          "task_description": "inventory lookup for Product A"
+        },
+        "fault_eligible": false
+      },
+      {
+        "tool": "inventory_lookup",
+        "args": {
+          "product_name": "Product A"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "planning_002",
+    "category": "planning_tool_selection",
+    "user_request": "Choose the correct tool to check whether Product B is available in inventory.",
+    "required_tools": [
+      "inventory_lookup",
+      "tool_registry"
+    ],
+    "expected_answer": "Product B is available with stock of 8.",
+    "success_criteria": {
+      "must_include": [
+        "Product B",
+        "8"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "unavailable_tool",
+      "malformed_output",
+      "schema_drift"
+    ],
+    "execution_plan": [
+      {
+        "tool": "tool_registry",
+        "args": {
+          "task_description": "inventory lookup for Product B"
+        },
+        "fault_eligible": false
+      },
+      {
+        "tool": "inventory_lookup",
+        "args": {
+          "product_name": "Product B"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "planning_003",
+    "category": "planning_tool_selection",
+    "user_request": "Choose the correct tool to find the standard support period for Product A.",
+    "required_tools": [
+      "policy_lookup",
+      "tool_registry"
+    ],
+    "expected_answer": "Standard support is 12 months for Product A.",
+    "success_criteria": {
+      "must_include": [
+        "12 months",
+        "Product A"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "unavailable_tool",
+      "malformed_output",
+      "schema_drift"
+    ],
+    "execution_plan": [
+      {
+        "tool": "tool_registry",
+        "args": {
+          "task_description": "policy lookup for support"
+        },
+        "fault_eligible": false
+      },
+      {
+        "tool": "policy_lookup",
+        "args": {
+          "policy_name": "standard_support"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "planning_004",
+    "category": "planning_tool_selection",
+    "user_request": "Choose the correct tool to find the refund policy for Product B.",
+    "required_tools": [
+      "policy_lookup",
+      "tool_registry"
+    ],
+    "expected_answer": "Refunds are allowed within 30 days for Product B.",
+    "success_criteria": {
+      "must_include": [
+        "30 days",
+        "Product B"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "unavailable_tool",
+      "malformed_output",
+      "schema_drift"
+    ],
+    "execution_plan": [
+      {
+        "tool": "tool_registry",
+        "args": {
+          "task_description": "policy lookup for refund"
+        },
+        "fault_eligible": false
+      },
+      {
+        "tool": "policy_lookup",
+        "args": {
+          "policy_name": "refund_policy"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "planning_005",
+    "category": "planning_tool_selection",
+    "user_request": "Choose the correct tool to check whether Product A is available in inventory.",
+    "required_tools": [
+      "inventory_lookup",
+      "tool_registry"
+    ],
+    "expected_answer": "Product A is available with stock of 15.",
+    "success_criteria": {
+      "must_include": [
+        "Product A",
+        "15"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "unavailable_tool",
+      "malformed_output",
+      "schema_drift"
+    ],
+    "execution_plan": [
+      {
+        "tool": "tool_registry",
+        "args": {
+          "task_description": "inventory lookup for Product A"
+        },
+        "fault_eligible": false
+      },
+      {
+        "tool": "inventory_lookup",
+        "args": {
+          "product_name": "Product A"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "planning_006",
+    "category": "planning_tool_selection",
+    "user_request": "Choose the correct tool to check whether Product B is available in inventory.",
+    "required_tools": [
+      "inventory_lookup",
+      "tool_registry"
+    ],
+    "expected_answer": "Product B is available with stock of 8.",
+    "success_criteria": {
+      "must_include": [
+        "Product B",
+        "8"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "unavailable_tool",
+      "malformed_output",
+      "schema_drift"
+    ],
+    "execution_plan": [
+      {
+        "tool": "tool_registry",
+        "args": {
+          "task_description": "inventory lookup for Product B"
+        },
+        "fault_eligible": false
+      },
+      {
+        "tool": "inventory_lookup",
+        "args": {
+          "product_name": "Product B"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "planning_007",
+    "category": "planning_tool_selection",
+    "user_request": "Choose the correct tool to find the standard support period for Product A.",
+    "required_tools": [
+      "policy_lookup",
+      "tool_registry"
+    ],
+    "expected_answer": "Standard support is 12 months for Product A.",
+    "success_criteria": {
+      "must_include": [
+        "12 months",
+        "Product A"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "unavailable_tool",
+      "malformed_output",
+      "schema_drift"
+    ],
+    "execution_plan": [
+      {
+        "tool": "tool_registry",
+        "args": {
+          "task_description": "policy lookup for support"
+        },
+        "fault_eligible": false
+      },
+      {
+        "tool": "policy_lookup",
+        "args": {
+          "policy_name": "standard_support"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "planning_008",
+    "category": "planning_tool_selection",
+    "user_request": "Choose the correct tool to find the refund policy for Product B.",
+    "required_tools": [
+      "policy_lookup",
+      "tool_registry"
+    ],
+    "expected_answer": "Refunds are allowed within 30 days for Product B.",
+    "success_criteria": {
+      "must_include": [
+        "30 days",
+        "Product B"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "unavailable_tool",
+      "malformed_output",
+      "schema_drift"
+    ],
+    "execution_plan": [
+      {
+        "tool": "tool_registry",
+        "args": {
+          "task_description": "policy lookup for refund"
+        },
+        "fault_eligible": false
+      },
+      {
+        "tool": "policy_lookup",
+        "args": {
+          "policy_name": "refund_policy"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "planning_009",
+    "category": "planning_tool_selection",
+    "user_request": "Choose the correct tool to check whether Product A is available in inventory.",
+    "required_tools": [
+      "inventory_lookup",
+      "tool_registry"
+    ],
+    "expected_answer": "Product A is available with stock of 15.",
+    "success_criteria": {
+      "must_include": [
+        "Product A",
+        "15"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "unavailable_tool",
+      "malformed_output",
+      "schema_drift"
+    ],
+    "execution_plan": [
+      {
+        "tool": "tool_registry",
+        "args": {
+          "task_description": "inventory lookup for Product A"
+        },
+        "fault_eligible": false
+      },
+      {
+        "tool": "inventory_lookup",
+        "args": {
+          "product_name": "Product A"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "planning_010",
+    "category": "planning_tool_selection",
+    "user_request": "Choose the correct tool to check whether Product B is available in inventory.",
+    "required_tools": [
+      "inventory_lookup",
+      "tool_registry"
+    ],
+    "expected_answer": "Product B is available with stock of 8.",
+    "success_criteria": {
+      "must_include": [
+        "Product B",
+        "8"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "unavailable_tool",
+      "malformed_output",
+      "schema_drift"
+    ],
+    "execution_plan": [
+      {
+        "tool": "tool_registry",
+        "args": {
+          "task_description": "inventory lookup for Product B"
+        },
+        "fault_eligible": false
+      },
+      {
+        "tool": "inventory_lookup",
+        "args": {
+          "product_name": "Product B"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "planning_011",
+    "category": "planning_tool_selection",
+    "user_request": "Choose the correct tool to find the standard support period for Product A.",
+    "required_tools": [
+      "policy_lookup",
+      "tool_registry"
+    ],
+    "expected_answer": "Standard support is 12 months for Product A.",
+    "success_criteria": {
+      "must_include": [
+        "12 months",
+        "Product A"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "unavailable_tool",
+      "malformed_output",
+      "schema_drift"
+    ],
+    "execution_plan": [
+      {
+        "tool": "tool_registry",
+        "args": {
+          "task_description": "policy lookup for support"
+        },
+        "fault_eligible": false
+      },
+      {
+        "tool": "policy_lookup",
+        "args": {
+          "policy_name": "standard_support"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "planning_012",
+    "category": "planning_tool_selection",
+    "user_request": "Choose the correct tool to find the refund policy for Product B.",
+    "required_tools": [
+      "policy_lookup",
+      "tool_registry"
+    ],
+    "expected_answer": "Refunds are allowed within 30 days for Product B.",
+    "success_criteria": {
+      "must_include": [
+        "30 days",
+        "Product B"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "unavailable_tool",
+      "malformed_output",
+      "schema_drift"
+    ],
+    "execution_plan": [
+      {
+        "tool": "tool_registry",
+        "args": {
+          "task_description": "policy lookup for refund"
+        },
+        "fault_eligible": false
+      },
+      {
+        "tool": "policy_lookup",
+        "args": {
+          "policy_name": "refund_policy"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "planning_013",
+    "category": "planning_tool_selection",
+    "user_request": "Choose the correct tool to check whether Product A is available in inventory.",
+    "required_tools": [
+      "inventory_lookup",
+      "tool_registry"
+    ],
+    "expected_answer": "Product A is available with stock of 15.",
+    "success_criteria": {
+      "must_include": [
+        "Product A",
+        "15"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "unavailable_tool",
+      "malformed_output",
+      "schema_drift"
+    ],
+    "execution_plan": [
+      {
+        "tool": "tool_registry",
+        "args": {
+          "task_description": "inventory lookup for Product A"
+        },
+        "fault_eligible": false
+      },
+      {
+        "tool": "inventory_lookup",
+        "args": {
+          "product_name": "Product A"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "planning_014",
+    "category": "planning_tool_selection",
+    "user_request": "Choose the correct tool to check whether Product B is available in inventory.",
+    "required_tools": [
+      "inventory_lookup",
+      "tool_registry"
+    ],
+    "expected_answer": "Product B is available with stock of 8.",
+    "success_criteria": {
+      "must_include": [
+        "Product B",
+        "8"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "unavailable_tool",
+      "malformed_output",
+      "schema_drift"
+    ],
+    "execution_plan": [
+      {
+        "tool": "tool_registry",
+        "args": {
+          "task_description": "inventory lookup for Product B"
+        },
+        "fault_eligible": false
+      },
+      {
+        "tool": "inventory_lookup",
+        "args": {
+          "product_name": "Product B"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "planning_015",
+    "category": "planning_tool_selection",
+    "user_request": "Choose the correct tool to find the standard support period for Product A.",
+    "required_tools": [
+      "policy_lookup",
+      "tool_registry"
+    ],
+    "expected_answer": "Standard support is 12 months for Product A.",
+    "success_criteria": {
+      "must_include": [
+        "12 months",
+        "Product A"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "unavailable_tool",
+      "malformed_output",
+      "schema_drift"
+    ],
+    "execution_plan": [
+      {
+        "tool": "tool_registry",
+        "args": {
+          "task_description": "policy lookup for support"
+        },
+        "fault_eligible": false
+      },
+      {
+        "tool": "policy_lookup",
+        "args": {
+          "policy_name": "standard_support"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "planning_016",
+    "category": "planning_tool_selection",
+    "user_request": "Choose the correct tool to find the refund policy for Product B.",
+    "required_tools": [
+      "policy_lookup",
+      "tool_registry"
+    ],
+    "expected_answer": "Refunds are allowed within 30 days for Product B.",
+    "success_criteria": {
+      "must_include": [
+        "30 days",
+        "Product B"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "unavailable_tool",
+      "malformed_output",
+      "schema_drift"
+    ],
+    "execution_plan": [
+      {
+        "tool": "tool_registry",
+        "args": {
+          "task_description": "policy lookup for refund"
+        },
+        "fault_eligible": false
+      },
+      {
+        "tool": "policy_lookup",
+        "args": {
+          "policy_name": "refund_policy"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "planning_017",
+    "category": "planning_tool_selection",
+    "user_request": "Choose the correct tool to check whether Product A is available in inventory.",
+    "required_tools": [
+      "inventory_lookup",
+      "tool_registry"
+    ],
+    "expected_answer": "Product A is available with stock of 15.",
+    "success_criteria": {
+      "must_include": [
+        "Product A",
+        "15"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "unavailable_tool",
+      "malformed_output",
+      "schema_drift"
+    ],
+    "execution_plan": [
+      {
+        "tool": "tool_registry",
+        "args": {
+          "task_description": "inventory lookup for Product A"
+        },
+        "fault_eligible": false
+      },
+      {
+        "tool": "inventory_lookup",
+        "args": {
+          "product_name": "Product A"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "planning_018",
+    "category": "planning_tool_selection",
+    "user_request": "Choose the correct tool to check whether Product B is available in inventory.",
+    "required_tools": [
+      "inventory_lookup",
+      "tool_registry"
+    ],
+    "expected_answer": "Product B is available with stock of 8.",
+    "success_criteria": {
+      "must_include": [
+        "Product B",
+        "8"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "unavailable_tool",
+      "malformed_output",
+      "schema_drift"
+    ],
+    "execution_plan": [
+      {
+        "tool": "tool_registry",
+        "args": {
+          "task_description": "inventory lookup for Product B"
+        },
+        "fault_eligible": false
+      },
+      {
+        "tool": "inventory_lookup",
+        "args": {
+          "product_name": "Product B"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "planning_019",
+    "category": "planning_tool_selection",
+    "user_request": "Choose the correct tool to find the standard support period for Product A.",
+    "required_tools": [
+      "policy_lookup",
+      "tool_registry"
+    ],
+    "expected_answer": "Standard support is 12 months for Product A.",
+    "success_criteria": {
+      "must_include": [
+        "12 months",
+        "Product A"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "unavailable_tool",
+      "malformed_output",
+      "schema_drift"
+    ],
+    "execution_plan": [
+      {
+        "tool": "tool_registry",
+        "args": {
+          "task_description": "policy lookup for support"
+        },
+        "fault_eligible": false
+      },
+      {
+        "tool": "policy_lookup",
+        "args": {
+          "policy_name": "standard_support"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "planning_020",
+    "category": "planning_tool_selection",
+    "user_request": "Choose the correct tool to find the refund policy for Product B.",
+    "required_tools": [
+      "policy_lookup",
+      "tool_registry"
+    ],
+    "expected_answer": "Refunds are allowed within 30 days for Product B.",
+    "success_criteria": {
+      "must_include": [
+        "30 days",
+        "Product B"
+      ]
+    },
+    "eligible_faults": [
+      "timeout",
+      "unavailable_tool",
+      "malformed_output",
+      "schema_drift"
+    ],
+    "execution_plan": [
+      {
+        "tool": "tool_registry",
+        "args": {
+          "task_description": "policy lookup for refund"
+        },
+        "fault_eligible": false
+      },
+      {
+        "tool": "policy_lookup",
+        "args": {
+          "policy_name": "refund_policy"
+        },
+        "fault_eligible": true
+      }
+    ]
+  },
+  {
+    "task_id": "contradiction_001",
+    "category": "contradiction_resolution",
+    "user_request": "Resolve the conflicting support period for Product A and provide the current answer.",
+    "required_tools": [
+      "policy_lookup",
+      "document_search",
+      "evidence_checker"
+    ],
+    "expected_answer": "Product A has standard support for 12 months.",
+    "success_criteria": {
+      "must_include": [
+        "12 months",
+        "standard support"
+      ]
+    },
+    "eligible_faults": [
+      "contradictory_evidence",
+      "stale_context",
+      "partial_response",
+      "malformed_output"
+    ],
+    "execution_plan": [
+      {
+        "tool": "document_search",
+        "args": {
+          "query": "Product A support policy"
+        },
+        "fault_eligible": true
+      },
+      {
+        "tool": "policy_lookup",
+        "args": {
+          "policy_name": "standard_support"
+        },
+        "fault_eligible": false
+      },
+      {
+        "tool": "evidence_checker",
+        "args": {
+          "answer": "Product A has standard support for 12 months.",
+          "evidence": "Standard support is 12 months for Product A."
+        },
+        "fault_eligible": false
+      }
+    ]
+  },
+  {
+    "task_id": "contradiction_002",
+    "category": "contradiction_resolution",
+    "user_request": "Resolve conflicting refund information for Product B and provide the current refund window.",
+    "required_tools": [
+      "policy_lookup",
+      "document_search",
+      "evidence_checker"
+    ],
+    "expected_answer": "Product B has a refund window of 30 days.",
+    "success_criteria": {
+      "must_include": [
+        "30 days",
+        "refund"
+      ]
+    },
+    "eligible_faults": [
+      "contradictory_evidence",
+      "stale_context",
+      "partial_response",
+      "malformed_output"
+    ],
+    "execution_plan": [
+      {
+        "tool": "document_search",
+        "args": {
+          "query": "Product B refund window"
+        },
+        "fault_eligible": true
+      },
+      {
+        "tool": "policy_lookup",
+        "args": {
+          "policy_name": "refund_policy"
+        },
+        "fault_eligible": false
+      },
+      {
+        "tool": "evidence_checker",
+        "args": {
+          "answer": "Product B has a refund window of 30 days.",
+          "evidence": "Refunds are allowed within 30 days for Product B."
+        },
+        "fault_eligible": false
+      }
+    ]
+  },
+  {
+    "task_id": "contradiction_003",
+    "category": "contradiction_resolution",
+    "user_request": "Resolve conflicting SLA evidence for enterprise customers and provide the current support response time.",
+    "required_tools": [
+      "document_search",
+      "evidence_checker"
+    ],
+    "expected_answer": "Enterprise customers receive priority support within 4 hours.",
+    "success_criteria": {
+      "must_include": [
+        "4 hours",
+        "priority support"
+      ]
+    },
+    "eligible_faults": [
+      "contradictory_evidence",
+      "stale_context",
+      "partial_response",
+      "malformed_output"
+    ],
+    "execution_plan": [
+      {
+        "tool": "document_search",
+        "args": {
+          "query": "enterprise SLA"
+        },
+        "fault_eligible": true
+      },
+      {
+        "tool": "evidence_checker",
+        "args": {
+          "answer": "Enterprise customers receive priority support within 4 hours.",
+          "evidence": "Enterprise customers receive priority support within 4 hours."
+        },
+        "fault_eligible": false
+      }
+    ]
+  },
+  {
+    "task_id": "contradiction_004",
+    "category": "contradiction_resolution",
+    "user_request": "Resolve the conflicting support period for Product A and provide the current answer.",
+    "required_tools": [
+      "policy_lookup",
+      "document_search",
+      "evidence_checker"
+    ],
+    "expected_answer": "Product A has standard support for 12 months.",
+    "success_criteria": {
+      "must_include": [
+        "12 months",
+        "standard support"
+      ]
+    },
+    "eligible_faults": [
+      "contradictory_evidence",
+      "stale_context",
+      "partial_response",
+      "malformed_output"
+    ],
+    "execution_plan": [
+      {
+        "tool": "document_search",
+        "args": {
+          "query": "Product A support policy"
+        },
+        "fault_eligible": true
+      },
+      {
+        "tool": "policy_lookup",
+        "args": {
+          "policy_name": "standard_support"
+        },
+        "fault_eligible": false
+      },
+      {
+        "tool": "evidence_checker",
+        "args": {
+          "answer": "Product A has standard support for 12 months.",
+          "evidence": "Standard support is 12 months for Product A."
+        },
+        "fault_eligible": false
+      }
+    ]
+  },
+  {
+    "task_id": "contradiction_005",
+    "category": "contradiction_resolution",
+    "user_request": "Resolve conflicting refund information for Product B and provide the current refund window.",
+    "required_tools": [
+      "policy_lookup",
+      "document_search",
+      "evidence_checker"
+    ],
+    "expected_answer": "Product B has a refund window of 30 days.",
+    "success_criteria": {
+      "must_include": [
+        "30 days",
+        "refund"
+      ]
+    },
+    "eligible_faults": [
+      "contradictory_evidence",
+      "stale_context",
+      "partial_response",
+      "malformed_output"
+    ],
+    "execution_plan": [
+      {
+        "tool": "document_search",
+        "args": {
+          "query": "Product B refund window"
+        },
+        "fault_eligible": true
+      },
+      {
+        "tool": "policy_lookup",
+        "args": {
+          "policy_name": "refund_policy"
+        },
+        "fault_eligible": false
+      },
+      {
+        "tool": "evidence_checker",
+        "args": {
+          "answer": "Product B has a refund window of 30 days.",
+          "evidence": "Refunds are allowed within 30 days for Product B."
+        },
+        "fault_eligible": false
+      }
+    ]
+  },
+  {
+    "task_id": "contradiction_006",
+    "category": "contradiction_resolution",
+    "user_request": "Resolve conflicting SLA evidence for enterprise customers and provide the current support response time.",
+    "required_tools": [
+      "document_search",
+      "evidence_checker"
+    ],
+    "expected_answer": "Enterprise customers receive priority support within 4 hours.",
+    "success_criteria": {
+      "must_include": [
+        "4 hours",
+        "priority support"
+      ]
+    },
+    "eligible_faults": [
+      "contradictory_evidence",
+      "stale_context",
+      "partial_response",
+      "malformed_output"
+    ],
+    "execution_plan": [
+      {
+        "tool": "document_search",
+        "args": {
+          "query": "enterprise SLA"
+        },
+        "fault_eligible": true
+      },
+      {
+        "tool": "evidence_checker",
+        "args": {
+          "answer": "Enterprise customers receive priority support within 4 hours.",
+          "evidence": "Enterprise customers receive priority support within 4 hours."
+        },
+        "fault_eligible": false
+      }
+    ]
+  },
+  {
+    "task_id": "contradiction_007",
+    "category": "contradiction_resolution",
+    "user_request": "Resolve the conflicting support period for Product A and provide the current answer.",
+    "required_tools": [
+      "policy_lookup",
+      "document_search",
+      "evidence_checker"
+    ],
+    "expected_answer": "Product A has standard support for 12 months.",
+    "success_criteria": {
+      "must_include": [
+        "12 months",
+        "standard support"
+      ]
+    },
+    "eligible_faults": [
+      "contradictory_evidence",
+      "stale_context",
+      "partial_response",
+      "malformed_output"
+    ],
+    "execution_plan": [
+      {
+        "tool": "document_search",
+        "args": {
+          "query": "Product A support policy"
+        },
+        "fault_eligible": true
+      },
+      {
+        "tool": "policy_lookup",
+        "args": {
+          "policy_name": "standard_support"
+        },
+        "fault_eligible": false
+      },
+      {
+        "tool": "evidence_checker",
+        "args": {
+          "answer": "Product A has standard support for 12 months.",
+          "evidence": "Standard support is 12 months for Product A."
+        },
+        "fault_eligible": false
+      }
+    ]
+  },
+  {
+    "task_id": "contradiction_008",
+    "category": "contradiction_resolution",
+    "user_request": "Resolve conflicting refund information for Product B and provide the current refund window.",
+    "required_tools": [
+      "policy_lookup",
+      "document_search",
+      "evidence_checker"
+    ],
+    "expected_answer": "Product B has a refund window of 30 days.",
+    "success_criteria": {
+      "must_include": [
+        "30 days",
+        "refund"
+      ]
+    },
+    "eligible_faults": [
+      "contradictory_evidence",
+      "stale_context",
+      "partial_response",
+      "malformed_output"
+    ],
+    "execution_plan": [
+      {
+        "tool": "document_search",
+        "args": {
+          "query": "Product B refund window"
+        },
+        "fault_eligible": true
+      },
+      {
+        "tool": "policy_lookup",
+        "args": {
+          "policy_name": "refund_policy"
+        },
+        "fault_eligible": false
+      },
+      {
+        "tool": "evidence_checker",
+        "args": {
+          "answer": "Product B has a refund window of 30 days.",
+          "evidence": "Refunds are allowed within 30 days for Product B."
+        },
+        "fault_eligible": false
+      }
+    ]
+  },
+  {
+    "task_id": "contradiction_009",
+    "category": "contradiction_resolution",
+    "user_request": "Resolve conflicting SLA evidence for enterprise customers and provide the current support response time.",
+    "required_tools": [
+      "document_search",
+      "evidence_checker"
+    ],
+    "expected_answer": "Enterprise customers receive priority support within 4 hours.",
+    "success_criteria": {
+      "must_include": [
+        "4 hours",
+        "priority support"
+      ]
+    },
+    "eligible_faults": [
+      "contradictory_evidence",
+      "stale_context",
+      "partial_response",
+      "malformed_output"
+    ],
+    "execution_plan": [
+      {
+        "tool": "document_search",
+        "args": {
+          "query": "enterprise SLA"
+        },
+        "fault_eligible": true
+      },
+      {
+        "tool": "evidence_checker",
+        "args": {
+          "answer": "Enterprise customers receive priority support within 4 hours.",
+          "evidence": "Enterprise customers receive priority support within 4 hours."
+        },
+        "fault_eligible": false
+      }
+    ]
+  },
+  {
+    "task_id": "contradiction_010",
+    "category": "contradiction_resolution",
+    "user_request": "Resolve the conflicting support period for Product A and provide the current answer.",
+    "required_tools": [
+      "policy_lookup",
+      "document_search",
+      "evidence_checker"
+    ],
+    "expected_answer": "Product A has standard support for 12 months.",
+    "success_criteria": {
+      "must_include": [
+        "12 months",
+        "standard support"
+      ]
+    },
+    "eligible_faults": [
+      "contradictory_evidence",
+      "stale_context",
+      "partial_response",
+      "malformed_output"
+    ],
+    "execution_plan": [
+      {
+        "tool": "document_search",
+        "args": {
+          "query": "Product A support policy"
+        },
+        "fault_eligible": true
+      },
+      {
+        "tool": "policy_lookup",
+        "args": {
+          "policy_name": "standard_support"
+        },
+        "fault_eligible": false
+      },
+      {
+        "tool": "evidence_checker",
+        "args": {
+          "answer": "Product A has standard support for 12 months.",
+          "evidence": "Standard support is 12 months for Product A."
+        },
+        "fault_eligible": false
+      }
+    ]
+  },
+  {
+    "task_id": "contradiction_011",
+    "category": "contradiction_resolution",
+    "user_request": "Resolve conflicting refund information for Product B and provide the current refund window.",
+    "required_tools": [
+      "policy_lookup",
+      "document_search",
+      "evidence_checker"
+    ],
+    "expected_answer": "Product B has a refund window of 30 days.",
+    "success_criteria": {
+      "must_include": [
+        "30 days",
+        "refund"
+      ]
+    },
+    "eligible_faults": [
+      "contradictory_evidence",
+      "stale_context",
+      "partial_response",
+      "malformed_output"
+    ],
+    "execution_plan": [
+      {
+        "tool": "document_search",
+        "args": {
+          "query": "Product B refund window"
+        },
+        "fault_eligible": true
+      },
+      {
+        "tool": "policy_lookup",
+        "args": {
+          "policy_name": "refund_policy"
+        },
+        "fault_eligible": false
+      },
+      {
+        "tool": "evidence_checker",
+        "args": {
+          "answer": "Product B has a refund window of 30 days.",
+          "evidence": "Refunds are allowed within 30 days for Product B."
+        },
+        "fault_eligible": false
+      }
+    ]
+  },
+  {
+    "task_id": "contradiction_012",
+    "category": "contradiction_resolution",
+    "user_request": "Resolve conflicting SLA evidence for enterprise customers and provide the current support response time.",
+    "required_tools": [
+      "document_search",
+      "evidence_checker"
+    ],
+    "expected_answer": "Enterprise customers receive priority support within 4 hours.",
+    "success_criteria": {
+      "must_include": [
+        "4 hours",
+        "priority support"
+      ]
+    },
+    "eligible_faults": [
+      "contradictory_evidence",
+      "stale_context",
+      "partial_response",
+      "malformed_output"
+    ],
+    "execution_plan": [
+      {
+        "tool": "document_search",
+        "args": {
+          "query": "enterprise SLA"
+        },
+        "fault_eligible": true
+      },
+      {
+        "tool": "evidence_checker",
+        "args": {
+          "answer": "Enterprise customers receive priority support within 4 hours.",
+          "evidence": "Enterprise customers receive priority support within 4 hours."
+        },
+        "fault_eligible": false
+      }
+    ]
+  },
+  {
+    "task_id": "contradiction_013",
+    "category": "contradiction_resolution",
+    "user_request": "Resolve the conflicting support period for Product A and provide the current answer.",
+    "required_tools": [
+      "policy_lookup",
+      "document_search",
+      "evidence_checker"
+    ],
+    "expected_answer": "Product A has standard support for 12 months.",
+    "success_criteria": {
+      "must_include": [
+        "12 months",
+        "standard support"
+      ]
+    },
+    "eligible_faults": [
+      "contradictory_evidence",
+      "stale_context",
+      "partial_response",
+      "malformed_output"
+    ],
+    "execution_plan": [
+      {
+        "tool": "document_search",
+        "args": {
+          "query": "Product A support policy"
+        },
+        "fault_eligible": true
+      },
+      {
+        "tool": "policy_lookup",
+        "args": {
+          "policy_name": "standard_support"
+        },
+        "fault_eligible": false
+      },
+      {
+        "tool": "evidence_checker",
+        "args": {
+          "answer": "Product A has standard support for 12 months.",
+          "evidence": "Standard support is 12 months for Product A."
+        },
+        "fault_eligible": false
+      }
+    ]
+  },
+  {
+    "task_id": "contradiction_014",
+    "category": "contradiction_resolution",
+    "user_request": "Resolve conflicting refund information for Product B and provide the current refund window.",
+    "required_tools": [
+      "policy_lookup",
+      "document_search",
+      "evidence_checker"
+    ],
+    "expected_answer": "Product B has a refund window of 30 days.",
+    "success_criteria": {
+      "must_include": [
+        "30 days",
+        "refund"
+      ]
+    },
+    "eligible_faults": [
+      "contradictory_evidence",
+      "stale_context",
+      "partial_response",
+      "malformed_output"
+    ],
+    "execution_plan": [
+      {
+        "tool": "document_search",
+        "args": {
+          "query": "Product B refund window"
+        },
+        "fault_eligible": true
+      },
+      {
+        "tool": "policy_lookup",
+        "args": {
+          "policy_name": "refund_policy"
+        },
+        "fault_eligible": false
+      },
+      {
+        "tool": "evidence_checker",
+        "args": {
+          "answer": "Product B has a refund window of 30 days.",
+          "evidence": "Refunds are allowed within 30 days for Product B."
+        },
+        "fault_eligible": false
+      }
+    ]
+  },
+  {
+    "task_id": "contradiction_015",
+    "category": "contradiction_resolution",
+    "user_request": "Resolve conflicting SLA evidence for enterprise customers and provide the current support response time.",
+    "required_tools": [
+      "document_search",
+      "evidence_checker"
+    ],
+    "expected_answer": "Enterprise customers receive priority support within 4 hours.",
+    "success_criteria": {
+      "must_include": [
+        "4 hours",
+        "priority support"
+      ]
+    },
+    "eligible_faults": [
+      "contradictory_evidence",
+      "stale_context",
+      "partial_response",
+      "malformed_output"
+    ],
+    "execution_plan": [
+      {
+        "tool": "document_search",
+        "args": {
+          "query": "enterprise SLA"
+        },
+        "fault_eligible": true
+      },
+      {
+        "tool": "evidence_checker",
+        "args": {
+          "answer": "Enterprise customers receive priority support within 4 hours.",
+          "evidence": "Enterprise customers receive priority support within 4 hours."
+        },
+        "fault_eligible": false
+      }
+    ]
+  },
+  {
+    "task_id": "contradiction_016",
+    "category": "contradiction_resolution",
+    "user_request": "Resolve the conflicting support period for Product A and provide the current answer.",
+    "required_tools": [
+      "policy_lookup",
+      "document_search",
+      "evidence_checker"
+    ],
+    "expected_answer": "Product A has standard support for 12 months.",
+    "success_criteria": {
+      "must_include": [
+        "12 months",
+        "standard support"
+      ]
+    },
+    "eligible_faults": [
+      "contradictory_evidence",
+      "stale_context",
+      "partial_response",
+      "malformed_output"
+    ],
+    "execution_plan": [
+      {
+        "tool": "document_search",
+        "args": {
+          "query": "Product A support policy"
+        },
+        "fault_eligible": true
+      },
+      {
+        "tool": "policy_lookup",
+        "args": {
+          "policy_name": "standard_support"
+        },
+        "fault_eligible": false
+      },
+      {
+        "tool": "evidence_checker",
+        "args": {
+          "answer": "Product A has standard support for 12 months.",
+          "evidence": "Standard support is 12 months for Product A."
+        },
+        "fault_eligible": false
+      }
+    ]
+  },
+  {
+    "task_id": "contradiction_017",
+    "category": "contradiction_resolution",
+    "user_request": "Resolve conflicting refund information for Product B and provide the current refund window.",
+    "required_tools": [
+      "policy_lookup",
+      "document_search",
+      "evidence_checker"
+    ],
+    "expected_answer": "Product B has a refund window of 30 days.",
+    "success_criteria": {
+      "must_include": [
+        "30 days",
+        "refund"
+      ]
+    },
+    "eligible_faults": [
+      "contradictory_evidence",
+      "stale_context",
+      "partial_response",
+      "malformed_output"
+    ],
+    "execution_plan": [
+      {
+        "tool": "document_search",
+        "args": {
+          "query": "Product B refund window"
+        },
+        "fault_eligible": true
+      },
+      {
+        "tool": "policy_lookup",
+        "args": {
+          "policy_name": "refund_policy"
+        },
+        "fault_eligible": false
+      },
+      {
+        "tool": "evidence_checker",
+        "args": {
+          "answer": "Product B has a refund window of 30 days.",
+          "evidence": "Refunds are allowed within 30 days for Product B."
+        },
+        "fault_eligible": false
+      }
+    ]
+  },
+  {
+    "task_id": "contradiction_018",
+    "category": "contradiction_resolution",
+    "user_request": "Resolve conflicting SLA evidence for enterprise customers and provide the current support response time.",
+    "required_tools": [
+      "document_search",
+      "evidence_checker"
+    ],
+    "expected_answer": "Enterprise customers receive priority support within 4 hours.",
+    "success_criteria": {
+      "must_include": [
+        "4 hours",
+        "priority support"
+      ]
+    },
+    "eligible_faults": [
+      "contradictory_evidence",
+      "stale_context",
+      "partial_response",
+      "malformed_output"
+    ],
+    "execution_plan": [
+      {
+        "tool": "document_search",
+        "args": {
+          "query": "enterprise SLA"
+        },
+        "fault_eligible": true
+      },
+      {
+        "tool": "evidence_checker",
+        "args": {
+          "answer": "Enterprise customers receive priority support within 4 hours.",
+          "evidence": "Enterprise customers receive priority support within 4 hours."
+        },
+        "fault_eligible": false
+      }
+    ]
+  },
+  {
+    "task_id": "contradiction_019",
+    "category": "contradiction_resolution",
+    "user_request": "Resolve the conflicting support period for Product A and provide the current answer.",
+    "required_tools": [
+      "policy_lookup",
+      "document_search",
+      "evidence_checker"
+    ],
+    "expected_answer": "Product A has standard support for 12 months.",
+    "success_criteria": {
+      "must_include": [
+        "12 months",
+        "standard support"
+      ]
+    },
+    "eligible_faults": [
+      "contradictory_evidence",
+      "stale_context",
+      "partial_response",
+      "malformed_output"
+    ],
+    "execution_plan": [
+      {
+        "tool": "document_search",
+        "args": {
+          "query": "Product A support policy"
+        },
+        "fault_eligible": true
+      },
+      {
+        "tool": "policy_lookup",
+        "args": {
+          "policy_name": "standard_support"
+        },
+        "fault_eligible": false
+      },
+      {
+        "tool": "evidence_checker",
+        "args": {
+          "answer": "Product A has standard support for 12 months.",
+          "evidence": "Standard support is 12 months for Product A."
+        },
+        "fault_eligible": false
+      }
+    ]
+  },
+  {
+    "task_id": "contradiction_020",
+    "category": "contradiction_resolution",
+    "user_request": "Resolve conflicting refund information for Product B and provide the current refund window.",
+    "required_tools": [
+      "policy_lookup",
+      "document_search",
+      "evidence_checker"
+    ],
+    "expected_answer": "Product B has a refund window of 30 days.",
+    "success_criteria": {
+      "must_include": [
+        "30 days",
+        "refund"
+      ]
+    },
+    "eligible_faults": [
+      "contradictory_evidence",
+      "stale_context",
+      "partial_response",
+      "malformed_output"
+    ],
+    "execution_plan": [
+      {
+        "tool": "document_search",
+        "args": {
+          "query": "Product B refund window"
+        },
+        "fault_eligible": true
+      },
+      {
+        "tool": "policy_lookup",
+        "args": {
+          "policy_name": "refund_policy"
+        },
+        "fault_eligible": false
+      },
+      {
+        "tool": "evidence_checker",
+        "args": {
+          "answer": "Product B has a refund window of 30 days.",
+          "evidence": "Refunds are allowed within 30 days for Product B."
+        },
+        "fault_eligible": false
+      }
+    ]
+  }
+]
