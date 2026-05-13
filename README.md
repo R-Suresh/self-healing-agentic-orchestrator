@@ -20,6 +20,26 @@ control loop for handling orchestration-level failures such as runtime tool fail
 
 The experiments use synthetic benchmark tasks, simulated tools, deterministic fault injection, and fixed random seeds to isolate orchestration behavior under controlled conditions.
 
+## Selected Results
+
+### Reliability Under Increasing Runtime Fault Intensity
+
+The main paper-facing reliability figure reports task success over the primary runtime fault regime, where fault intensity ranges from `0.0` to `0.3`.
+
+![Success rate vs fault intensity](figures/success_rate_vs_fault_intensity.png)
+
+### Failure-Class Analysis
+
+The failure-class heatmap summarizes task success across injected fault types and orchestration strategies.
+
+![Failure type success heatmap](figures/failure_type_success_heatmap.png)
+
+### Semantic Silent-Failure Experiment
+
+The semantic silent-failure experiment evaluates wrong-but-plausible tool outputs that are syntactically valid but incorrect under task-specific success criteria.
+
+![Semantic silent failure rate vs intensity](figures/semantic_silent_failure_rate_vs_intensity.png)
+
 ## Repository Structure
 
 ```text
