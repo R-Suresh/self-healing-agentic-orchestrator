@@ -1,0 +1,11 @@
+\begin{tabular}{lrrrrrrrrr}
+\toprule
+method & success_rate & recovery_rate & silent_failure_rate & avg_tool_calls & avg_model_calls & avg_verifier_calls & avg_recovery_steps & avg_latency_ms & avg_cost_proxy \\
+\midrule
+full_replanning & 98.200000 & 15.200000 & 0.000000 & 2.040000 & 1.240000 & 0.000000 & 0.250000 & 384.720000 & 3.280000 \\
+react_style & 98.300000 & 16.100000 & 0.000000 & 2.030000 & 1.230000 & 0.000000 & 0.250000 & 331.020000 & 3.260000 \\
+retry_only & 98.400000 & 16.600000 & 0.000000 & 2.040000 & 0.000000 & 0.000000 & 0.250000 & 388.690000 & 2.040000 \\
+self_healing & 99.600000 & 17.100000 & 0.000000 & 2.030000 & 0.000000 & 1.000000 & 0.220000 & 305.920000 & 3.030000 \\
+static_workflow & 80.400000 & 0.000000 & 0.000000 & 1.650000 & 0.000000 & 0.000000 & 0.000000 & 311.250000 & 1.650000 \\
+\bottomrule
+\end{tabular}

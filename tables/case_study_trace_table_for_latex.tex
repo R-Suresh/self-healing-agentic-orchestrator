@@ -1,0 +1,13 @@
+\begin{table}
+\caption{Representative self-healing recovery traces.}
+\label{tab:trace_case_studies}
+\begin{tabular}{lllllllrrrr}
+\toprule
+case_study & task_id & category & actual_faults & detected_signals_in_trace & failure_classes_in_trace & recovery_actions_in_trace & verifier_calls & recovery_steps & success & recovered \\
+\midrule
+runtime_tool_failure & workflow_001 & multi_step_api_workflow & timeout & timeout & tool_invocation_failure & retry_with_backoff & 1 & 1 & True & True \\
+context_evidence_failure & retrieval_001 & retrieval_evidence & stale_context & stale_context & context_failure & refresh_retrieval & 1 & 1 & True & True \\
+semantic_silent_failure & retrieval_002 & retrieval_evidence & semantic_wrong_output & semantic_validation_failure & semantic_failure & verification_guided_semantic_recovery & 2 & 1 & True & True \\
+\bottomrule
+\end{tabular}
+\end{table}

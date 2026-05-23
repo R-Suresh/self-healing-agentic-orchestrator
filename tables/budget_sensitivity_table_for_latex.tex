@@ -1,0 +1,22 @@
+\begin{table}
+\caption{Budget sensitivity analysis across recovery budgets.}
+\label{tab:budget_sensitivity}
+\begin{tabular}{rlrrrrr}
+\toprule
+recovery_budget & method & success_rate & recovery_rate & silent_failure_rate & avg_recovery_steps & avg_cost_proxy \\
+\midrule
+1 & full_replanning & 88.200000 & 21.000000 & 0.000000 & 0.450000 & 3.450000 \\
+1 & retry_only & 85.300000 & 23.000000 & 0.000000 & 0.520000 & 2.150000 \\
+1 & self_healing & 94.000000 & 25.200000 & 0.000000 & 0.310000 & 3.130000 \\
+2 & full_replanning & 94.300000 & 27.200000 & 0.000000 & 0.500000 & 3.760000 \\
+2 & retry_only & 93.800000 & 31.500000 & 0.000000 & 0.580000 & 2.370000 \\
+2 & self_healing & 97.800000 & 29.000000 & 0.000000 & 0.370000 & 3.230000 \\
+3 & full_replanning & 97.800000 & 30.700000 & 0.000000 & 0.520000 & 3.910000 \\
+3 & retry_only & 96.700000 & 34.300000 & 0.000000 & 0.620000 & 2.450000 \\
+3 & self_healing & 99.200000 & 30.300000 & 0.000000 & 0.390000 & 3.260000 \\
+5 & full_replanning & 99.300000 & 32.200000 & 0.000000 & 0.550000 & 4.010000 \\
+5 & retry_only & 99.200000 & 36.800000 & 0.000000 & 0.640000 & 2.520000 \\
+5 & self_healing & 100.000000 & 31.200000 & 0.000000 & 0.400000 & 3.280000 \\
+\bottomrule
+\end{tabular}
+\end{table}
