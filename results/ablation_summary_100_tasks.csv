@@ -1,0 +1,7 @@
+method,success_rate,recovery_rate,silent_failure_rate,avg_recovery_steps,avg_tool_calls,avg_model_calls,avg_verifier_calls,avg_latency_ms,avg_cost_proxy,avg_trace_events
+self_healing_full,99.3,32.3,0.0,0.43,2.3,0.0,1.0,565.56,3.3,2.18
+self_healing_no_budget,100.0,33.0,0.0,0.44,2.31,0.0,1.0,576.36,3.31,2.21
+self_healing_no_classifier,95.7,28.7,0.0,0.56,2.45,0.0,1.0,774.5,3.45,2.45
+self_healing_no_observability,99.3,32.3,0.0,0.43,2.3,0.0,1.0,565.56,3.3,0.0
+self_healing_no_targeted_recovery,95.7,28.7,0.0,0.56,2.45,0.0,1.0,774.5,3.45,2.45
+self_healing_no_verifier,99.3,32.3,0.0,0.43,2.3,0.0,0.0,565.56,2.3,2.18

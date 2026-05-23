@@ -1,0 +1,8 @@
+actual_fault_type,count
+timeout,789
+partial_response,768
+schema_drift,669
+malformed_output,609
+unavailable_tool,455
+stale_context,308
+contradictory_evidence,158
