@@ -1,6 +1,0 @@
-method,success_rate,recovery_rate,silent_failure_rate,avg_tool_calls,avg_model_calls,avg_verifier_calls,avg_recovery_steps,avg_latency_ms,avg_cost_proxy
-full_replanning,93.8,21.0,0.0,2.23,1.4,0.0,0.46,633.39,3.63
-react_style,94.1,22.6,0.0,2.23,1.41,0.0,0.46,581.91,3.63
-retry_only,94.5,24.0,0.0,2.24,0.0,0.0,0.47,595.81,2.24
-self_healing,98.8,27.6,0.0,2.25,0.0,1.0,0.38,499.55,3.25
-static_workflow,70.1,0.0,0.0,1.61,0.0,0.0,0.0,398.53,1.61

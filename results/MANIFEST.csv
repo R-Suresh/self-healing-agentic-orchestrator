@@ -1,9 +1,0 @@
-file,source_notebook_output,rows,columns
-results/results_100_tasks.csv,results/results_100_tasks.csv,9000,20
-results/overall_results_100_tasks.csv,results/overall_results_100_tasks.csv,5,10
-results/fault_intensity_results_100_tasks.csv,results/fault_intensity_results_100_tasks.csv,30,5
-results/primary_results_100_tasks.csv,results/primary_results_100_tasks.csv,5,10
-results/stress_results_100_tasks.csv,results/stress_results_100_tasks.csv,5,10
-results/failure_type_results.csv,results/failure_type_results_100_tasks.csv,35,12
-results/ablation_results.csv,results/ablation_results_100_tasks.csv,9000,22
-results/semantic_results.csv,results/semantic_fault_results_100_tasks.csv,7200,20
