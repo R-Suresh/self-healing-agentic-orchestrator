@@ -1,7 +1,0 @@
-file,rows_represented,source
-tables/overall_results_table.tex,5,validated primary-regime notebook outputs
-tables/primary_stress_results_table.tex,5,validated primary-regime notebook outputs
-tables/failure_type_results_table.tex,7,validated primary-regime notebook outputs
-tables/ablation_results_table.tex,6,validated primary-regime notebook outputs
-tables/semantic_silent_failure_table.tex,6,validated primary-regime notebook outputs
-tables/trace_case_studies_table.tex,3,validated primary-regime notebook outputs
