@@ -1,0 +1,21 @@
+\begin{tabular}{llrrrrrrrrrrrrrrr}
+\toprule
+method & fault_type & executions & success_rate & silent_failure_rate & safe_degradation_rate & detected_failure_rate & recovery_success_rate & fault_scheduled_rate & fault_injected_rate & avg_model_calls & avg_tool_calls & avg_judge_calls & avg_recovery_steps & avg_input_tokens & avg_output_tokens & avg_cost_usd \\
+\midrule
+full_replanning & malformed_output & 3 & 1.000 & 0.000 & 0.000 & 1.000 & 1.000 & 1.000 & 1.000 & 3.000 & 3.667 & 1.000 & 1.000 & 3848.333 & 384.667 & 0.000 \\
+full_replanning & stale_context & 4 & 1.000 & 0.000 & 0.000 & 1.000 & 1.000 & 1.000 & 1.000 & 2.500 & 2.500 & 1.000 & 1.000 & 3109.250 & 323.000 & 0.000 \\
+full_replanning & timeout & 4 & 1.000 & 0.000 & 0.000 & 1.000 & 1.000 & 1.000 & 1.000 & 3.000 & 3.500 & 1.000 & 1.000 & 3783.750 & 388.250 & 0.000 \\
+full_replanning & unavailable_tool & 2 & 1.000 & 0.000 & 0.000 & 1.000 & 1.000 & 1.000 & 1.000 & 2.500 & 2.500 & 1.000 & 1.000 & 3072.500 & 320.500 & 0.000 \\
+full_replanning & wrong_but_plausible & 1 & 1.000 & 0.000 & 0.000 & 1.000 & 1.000 & 1.000 & 1.000 & 3.000 & 4.000 & 1.000 & 1.000 & 4063.000 & 420.000 & 0.000 \\
+retry_only & malformed_output & 3 & 1.000 & 0.000 & 0.000 & 1.000 & 0.000 & 1.000 & 1.000 & 4.000 & 4.667 & 1.000 & 0.000 & 4713.333 & 395.333 & 0.000 \\
+retry_only & stale_context & 4 & 1.000 & 0.000 & 0.000 & 1.000 & 0.000 & 1.000 & 1.000 & 3.000 & 3.000 & 1.000 & 0.000 & 3431.750 & 340.250 & 0.000 \\
+retry_only & timeout & 4 & 1.000 & 0.000 & 0.000 & 1.000 & 1.000 & 1.000 & 1.000 & 3.000 & 3.500 & 1.000 & 1.000 & 3749.250 & 387.500 & 0.000 \\
+retry_only & unavailable_tool & 2 & 1.000 & 0.000 & 0.000 & 1.000 & 1.000 & 1.000 & 1.000 & 2.500 & 2.500 & 1.000 & 1.000 & 3035.000 & 323.000 & 0.000 \\
+retry_only & wrong_but_plausible & 1 & 1.000 & 0.000 & 0.000 & 1.000 & 0.000 & 1.000 & 1.000 & 3.000 & 4.000 & 1.000 & 0.000 & 3717.000 & 439.000 & 0.000 \\
+self_healing & malformed_output & 3 & 1.000 & 0.000 & 0.000 & 1.000 & 1.000 & 1.000 & 1.000 & 3.000 & 3.667 & 1.000 & 1.000 & 3900.000 & 393.000 & 0.000 \\
+self_healing & stale_context & 4 & 1.000 & 0.000 & 0.000 & 1.000 & 1.000 & 1.000 & 1.000 & 2.500 & 2.500 & 1.000 & 1.000 & 3161.250 & 323.250 & 0.000 \\
+self_healing & timeout & 4 & 1.000 & 0.000 & 0.000 & 1.000 & 1.000 & 1.000 & 1.000 & 3.000 & 3.500 & 1.000 & 1.000 & 3833.500 & 379.250 & 0.000 \\
+self_healing & unavailable_tool & 2 & 1.000 & 0.000 & 0.000 & 1.000 & 1.000 & 1.000 & 1.000 & 2.500 & 2.500 & 1.000 & 1.000 & 3121.000 & 316.000 & 0.000 \\
+self_healing & wrong_but_plausible & 1 & 1.000 & 0.000 & 0.000 & 1.000 & 1.000 & 1.000 & 1.000 & 3.000 & 4.000 & 1.000 & 1.000 & 4058.000 & 396.000 & 0.000 \\
+\bottomrule
+\end{tabular}

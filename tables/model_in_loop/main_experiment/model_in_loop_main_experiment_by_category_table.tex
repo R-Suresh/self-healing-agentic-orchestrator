@@ -1,0 +1,15 @@
+\begin{tabular}{llrrrrrrrrrrrrrrr}
+\toprule
+method & category & executions & success_rate & silent_failure_rate & safe_degradation_rate & detected_failure_rate & recovery_success_rate & fault_scheduled_rate & fault_injected_rate & avg_model_calls & avg_tool_calls & avg_judge_calls & avg_recovery_steps & avg_input_tokens & avg_output_tokens & avg_cost_usd \\
+\midrule
+full_replanning & calculation_verification & 10 & 1.000 & 0.000 & 0.000 & 0.300 & 0.300 & 0.300 & 0.300 & 2.000 & 1.000 & 1.000 & 0.300 & 1979.600 & 219.400 & 0.000 \\
+full_replanning & multi_step_api_workflow & 10 & 1.000 & 0.000 & 0.000 & 0.800 & 0.800 & 0.800 & 0.800 & 3.000 & 4.000 & 1.000 & 0.800 & 3907.800 & 400.900 & 0.000 \\
+full_replanning & retrieval_evidence & 10 & 1.000 & 0.000 & 0.000 & 0.300 & 0.300 & 0.300 & 0.300 & 3.000 & 3.000 & 1.000 & 0.300 & 3461.300 & 352.600 & 0.000 \\
+retry_only & calculation_verification & 10 & 1.000 & 0.000 & 0.000 & 0.300 & 0.100 & 0.300 & 0.300 & 2.100 & 1.100 & 1.000 & 0.100 & 2016.300 & 219.600 & 0.000 \\
+retry_only & multi_step_api_workflow & 10 & 1.000 & 0.000 & 0.000 & 0.800 & 0.300 & 0.800 & 0.800 & 3.300 & 4.300 & 1.000 & 0.300 & 4129.900 & 407.100 & 0.000 \\
+retry_only & retrieval_evidence & 10 & 1.000 & 0.000 & 0.000 & 0.300 & 0.200 & 0.300 & 0.300 & 3.200 & 3.100 & 1.000 & 0.200 & 3587.700 & 337.300 & 0.000 \\
+self_healing & calculation_verification & 10 & 1.000 & 0.000 & 0.000 & 0.300 & 0.300 & 0.300 & 0.300 & 2.000 & 1.000 & 1.000 & 0.300 & 2005.100 & 218.100 & 0.000 \\
+self_healing & multi_step_api_workflow & 10 & 1.000 & 0.000 & 0.000 & 0.800 & 0.800 & 0.800 & 0.800 & 3.000 & 4.000 & 1.000 & 0.800 & 3962.300 & 404.100 & 0.000 \\
+self_healing & retrieval_evidence & 10 & 1.000 & 0.000 & 0.000 & 0.300 & 0.300 & 0.300 & 0.300 & 3.000 & 3.000 & 1.000 & 0.300 & 3481.500 & 344.000 & 0.000 \\
+\bottomrule
+\end{tabular}

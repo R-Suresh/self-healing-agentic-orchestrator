@@ -1,0 +1,15 @@
+\begin{tabular}{lrrrrrrrrrrrrrrrr}
+\toprule
+method & recovery_budget_level & executions & success_rate & silent_failure_rate & safe_degradation_rate & detected_failure_rate & recovery_success_rate & fault_scheduled_rate & fault_injected_rate & avg_model_calls & avg_tool_calls & avg_judge_calls & avg_recovery_steps & avg_input_tokens & avg_output_tokens & avg_cost_usd \\
+\midrule
+full_replanning & 1 & 20 & 1.000 & 0.000 & 0.000 & 0.550 & 0.550 & 0.550 & 0.550 & 3.000 & 3.500 & 1.000 & 0.550 & 3681.550 & 374.250 & 0.000 \\
+full_replanning & 2 & 20 & 1.000 & 0.000 & 0.000 & 0.550 & 0.550 & 0.550 & 0.550 & 3.000 & 3.500 & 1.000 & 0.550 & 3682.950 & 374.650 & 0.000 \\
+full_replanning & 3 & 20 & 1.000 & 0.000 & 0.000 & 0.550 & 0.550 & 0.550 & 0.550 & 3.000 & 3.500 & 1.000 & 0.550 & 3683.050 & 375.250 & 0.000 \\
+retry_only & 1 & 20 & 1.000 & 0.000 & 0.000 & 0.550 & 0.250 & 0.550 & 0.550 & 3.300 & 3.700 & 1.000 & 0.250 & 3898.050 & 373.450 & 0.000 \\
+retry_only & 2 & 20 & 1.000 & 0.000 & 0.000 & 0.550 & 0.250 & 0.550 & 0.550 & 3.300 & 3.700 & 1.000 & 0.250 & 3896.350 & 376.700 & 0.000 \\
+retry_only & 3 & 20 & 1.000 & 0.000 & 0.000 & 0.550 & 0.250 & 0.550 & 0.550 & 3.150 & 3.650 & 1.000 & 0.250 & 3759.450 & 381.100 & 0.000 \\
+self_healing & 1 & 20 & 1.000 & 0.000 & 0.000 & 0.550 & 0.550 & 0.550 & 0.550 & 3.000 & 3.500 & 1.000 & 0.550 & 3734.650 & 378.650 & 0.000 \\
+self_healing & 2 & 20 & 1.000 & 0.000 & 0.000 & 0.550 & 0.550 & 0.550 & 0.550 & 3.000 & 3.500 & 1.000 & 0.550 & 3714.600 & 372.050 & 0.000 \\
+self_healing & 3 & 20 & 1.000 & 0.000 & 0.000 & 0.550 & 0.550 & 0.550 & 0.550 & 3.000 & 3.500 & 1.000 & 0.550 & 3717.400 & 374.800 & 0.000 \\
+\bottomrule
+\end{tabular}
