@@ -1,0 +1,391 @@
+{
+  "run_id": "live_retrieval_002__retry_only__lambda_0.3__seed_11__budget_2",
+  "task": {
+    "task_id": "live_retrieval_002",
+    "category": "retrieval_evidence",
+    "success_mode": "decision",
+    "user_request": "Determine whether expedited replacement is allowed for order O-1002. You must use order_lookup, customer_lookup, and policy_lookup evidence.",
+    "expected_decision": "not_allowed",
+    "expected_facts": [
+      "O-1002 delay_hours is 72",
+      "C-002 tier is Silver",
+      "replacement policy requires Gold or Platinum"
+    ],
+    "required_tools": [
+      "order_lookup",
+      "customer_lookup",
+      "policy_lookup"
+    ]
+  },
+  "row": {
+    "run_id": "live_retrieval_002__retry_only__lambda_0.3__seed_11__budget_2",
+    "task_id": "live_retrieval_002",
+    "category": "retrieval_evidence",
+    "success_mode": "decision",
+    "method": "retry_only",
+    "model": "gpt-5.4-mini",
+    "fault_intensity": 0.3,
+    "seed": 11,
+    "recovery_budget": 2,
+    "fault_scheduled": true,
+    "fault_target_tool": "customer_lookup",
+    "fault_type": "timeout",
+    "fault_injected": true,
+    "expected_decision": "not_allowed",
+    "predicted_decision": "not_allowed",
+    "decision_match": true,
+    "numeric_answer": null,
+    "expected_numeric_answer": null,
+    "numeric_ok": true,
+    "tools_ok": true,
+    "missing_required_tools": "",
+    "extra_tools_used": "",
+    "tool_efficiency": 1.0,
+    "task_success": true,
+    "silent_failure": false,
+    "safe_degradation": false,
+    "detected_failure": true,
+    "recovery_success": true,
+    "llm_judge_outcome": "correct",
+    "judge_confidence": 0.99,
+    "grounded_in_tool_evidence": true,
+    "uses_stale_or_contradictory_evidence": false,
+    "model_calls": 3,
+    "tool_calls": 3,
+    "verifier_calls": 0,
+    "judge_calls": 1,
+    "recovery_steps": 1,
+    "input_tokens": 3625,
+    "output_tokens": 374,
+    "estimated_cost_usd": 0.0,
+    "eval_reason": "rule=(mode=decision; decision_match=True; numeric_ok=True; tools_ok=True; missing=[]; extra=[]); judge=correct; The final answer matches the expected decision of not_allowed and is supported by current tool evidence: order O-1002 is delayed 72 hours, customer C-002 is Silver and active, and the policy requires Gold or Platinum plus active status. The customer_lookup timeout was recovered, so no stale or unrecovered evidence is relied upon.",
+    "final_answer": "Expedited replacement is not allowed for order O-1002 because the customer is Silver tier, while the policy requires Gold or Platinum tier, even though the order is delayed by more than 48 hours and the account is active.",
+    "tool_path": "order_lookup|multi_tool_use.parallel|customer_lookup|policy_lookup",
+    "tools_used": "order_lookup|customer_lookup|policy_lookup"
+  },
+  "events": [
+    {
+      "step": 1,
+      "event_type": "run_start",
+      "details": {
+        "run_id": "live_retrieval_002__retry_only__lambda_0.3__seed_11__budget_2",
+        "task_id": "live_retrieval_002",
+        "method": "retry_only",
+        "fault_intensity": 0.3,
+        "seed": 11,
+        "fault_plan": {
+          "inject": true,
+          "target_tool": "customer_lookup",
+          "fault_type": "timeout"
+        }
+      }
+    },
+    {
+      "step": 2,
+      "event_type": "model_call",
+      "details": {
+        "elapsed": 0.42977404594421387,
+        "has_tool_calls": true,
+        "content_preview": "None"
+      }
+    },
+    {
+      "step": 3,
+      "event_type": "tool_call",
+      "details": {
+        "tool_name": "order_lookup",
+        "arguments": {
+          "order_id": "O-1002"
+        },
+        "result_summary": "{'status': 'ok', 'data': {'order_id': 'O-1002', 'customer_id': 'C-002', 'sku': 'SKU-B', 'status': 'delayed', 'delay_hours': 72, 'shipped': True, 'damaged': False, 'days_since_purchase': 20}, 'evidence_source': 'order_lookup', 'freshness': 'current', 'fault_injected': None}"
+      }
+    },
+    {
+      "step": 4,
+      "event_type": "model_call",
+      "details": {
+        "elapsed": 0.5671923160552979,
+        "has_tool_calls": true,
+        "content_preview": "None"
+      }
+    },
+    {
+      "step": 5,
+      "event_type": "fault_injected",
+      "details": {
+        "tool_name": "customer_lookup",
+        "fault_type": "timeout",
+        "clean_summary": "{'status': 'ok', 'data': {'customer_id': 'C-002', 'tier': 'Silver', 'status': 'active'}, 'evidence_source': 'customer_lookup', 'freshness': 'current', 'fault_injected': None}",
+        "faulted_summary": "{'status': 'error', 'error_type': 'timeout', 'message': 'Injected timeout in customer_lookup', 'evidence_source': 'customer_lookup', 'fault_injected': 'timeout'}"
+      }
+    },
+    {
+      "step": 6,
+      "event_type": "failure_detection",
+      "details": {
+        "tool_name": "customer_lookup",
+        "has_failure": true,
+        "signal": "timeout",
+        "failure_class": "tool_invocation_failure"
+      }
+    },
+    {
+      "step": 7,
+      "event_type": "recovery_action",
+      "details": {
+        "tool_name": "customer_lookup",
+        "action": "retry_same_tool",
+        "budget_remaining": 1,
+        "result_summary": "{'status': 'ok', 'recovered': True, 'recovery_action': 'retry_same_tool', 'faulted_result': {'status': 'error', 'error_type': 'timeout', 'message': 'Injected timeout in customer_lookup', 'evidence_source': 'customer_lookup', 'fault_injected': 'timeout'}, 'recovered_result': {'status': 'ok', 'data': {'customer_id': 'C-002', 'tier': 'Silver', 'status"
+      }
+    },
+    {
+      "step": 8,
+      "event_type": "tool_call",
+      "details": {
+        "tool_name": "customer_lookup",
+        "arguments": {
+          "customer_id": "C-002"
+        },
+        "result_summary": "{'status': 'ok', 'recovered': True, 'recovery_action': 'retry_same_tool', 'faulted_result': {'status': 'error', 'error_type': 'timeout', 'message': 'Injected timeout in customer_lookup', 'evidence_source': 'customer_lookup', 'fault_injected': 'timeout'}, 'recovered_result': {'status': 'ok', 'data': {'customer_id': 'C-002', 'tier': 'Silver', 'status': 'active'}, 'evidence_source': 'customer_lookup', 'freshness': 'current', 'fault_injected': None}, 'evidence_source': 'customer_lookup', 'fault_inje"
+      }
+    },
+    {
+      "step": 9,
+      "event_type": "tool_call",
+      "details": {
+        "tool_name": "policy_lookup",
+        "arguments": {
+          "policy_name": "replacement_policy"
+        },
+        "result_summary": "{'status': 'ok', 'data': {'policy_name': 'replacement_policy', 'version': '2026-05-current', 'text': 'Expedited replacement is allowed when an order is delayed by more than 48 hours, the customer is Gold or Platinum tier, and the customer account is active at evaluation time. Inactive accounts are not eligible for expedited replacement.', 'effective_date': '2026-05-01'}, 'evidence_source': 'policy_lookup', 'freshness': 'current', 'fault_injected': None}"
+      }
+    },
+    {
+      "step": 10,
+      "event_type": "model_call",
+      "details": {
+        "elapsed": 1.4583075046539307,
+        "has_tool_calls": false,
+        "content_preview": "{\"decision\":\"not_allowed\",\"numeric_answer\":null,\"tool_path\":[\"functions.order_lookup\",\"multi_tool_use.parallel\",\"functions.customer_lookup\",\"functions.policy_lookup\"],\"answer\":\"Expedited replacement is not allowed for order O-1002 because the custome"
+      }
+    },
+    {
+      "step": 11,
+      "event_type": "final_answer",
+      "details": {
+        "answer": "{\"decision\":\"not_allowed\",\"numeric_answer\":null,\"tool_path\":[\"functions.order_lookup\",\"multi_tool_use.parallel\",\"functions.customer_lookup\",\"functions.policy_lookup\"],\"answer\":\"Expedited replacement is not allowed for order O-1002 because the customer is Silver tier, while the policy requires Gold or Platinum tier, even though the order is delayed by more than 48 hours and the account is active.\",\"evidence_used\":[\"order_lookup: order O-1002 has status delayed, delay_hours 72, customer_id C-002, days_since_purchase 20\",\"customer_lookup: customer C-002 has tier Silver and status active\",\"replacement_policy: expedited replacement is allowed only when an order is delayed by more than 48 hours, the customer is Gold or Platinum tier, and the customer account is active\"],\"uncertainty\":\"low\"}"
+      }
+    },
+    {
+      "step": 12,
+      "event_type": "llm_judge",
+      "details": {
+        "elapsed": 0.9600448608398438,
+        "judge": {
+          "outcome": "correct",
+          "decision_match": true,
+          "grounded_in_tool_evidence": true,
+          "uses_stale_or_contradictory_evidence": false,
+          "is_safe_degradation": false,
+          "is_silent_failure": false,
+          "confidence": 0.99,
+          "reason": "The final answer matches the expected decision of not_allowed and is supported by current tool evidence: order O-1002 is delayed 72 hours, customer C-002 is Silver and active, and the policy requires Gold or Platinum plus active status. The customer_lookup timeout was recovered, so no stale or unrecovered evidence is relied upon."
+        }
+      }
+    }
+  ],
+  "tool_outputs": [
+    {
+      "tool_name": "order_lookup",
+      "arguments": {
+        "order_id": "O-1002"
+      },
+      "result": {
+        "status": "ok",
+        "data": {
+          "order_id": "O-1002",
+          "customer_id": "C-002",
+          "sku": "SKU-B",
+          "status": "delayed",
+          "delay_hours": 72,
+          "shipped": true,
+          "damaged": false,
+          "days_since_purchase": 20
+        },
+        "evidence_source": "order_lookup",
+        "freshness": "current",
+        "fault_injected": null
+      },
+      "clean_result": {
+        "status": "ok",
+        "data": {
+          "order_id": "O-1002",
+          "customer_id": "C-002",
+          "sku": "SKU-B",
+          "status": "delayed",
+          "delay_hours": 72,
+          "shipped": true,
+          "damaged": false,
+          "days_since_purchase": 20
+        },
+        "evidence_source": "order_lookup",
+        "freshness": "current",
+        "fault_injected": null
+      },
+      "faulted_result": null,
+      "detected_failure": false,
+      "recovered": false,
+      "unresolved_fault": false,
+      "failure_signal": null,
+      "failure_class": null
+    },
+    {
+      "tool_name": "customer_lookup",
+      "arguments": {
+        "customer_id": "C-002"
+      },
+      "result": {
+        "status": "ok",
+        "recovered": true,
+        "recovery_action": "retry_same_tool",
+        "faulted_result": {
+          "status": "error",
+          "error_type": "timeout",
+          "message": "Injected timeout in customer_lookup",
+          "evidence_source": "customer_lookup",
+          "fault_injected": "timeout"
+        },
+        "recovered_result": {
+          "status": "ok",
+          "data": {
+            "customer_id": "C-002",
+            "tier": "Silver",
+            "status": "active"
+          },
+          "evidence_source": "customer_lookup",
+          "freshness": "current",
+          "fault_injected": null
+        },
+        "evidence_source": "customer_lookup",
+        "fault_injected": "timeout"
+      },
+      "clean_result": {
+        "status": "ok",
+        "data": {
+          "customer_id": "C-002",
+          "tier": "Silver",
+          "status": "active"
+        },
+        "evidence_source": "customer_lookup",
+        "freshness": "current",
+        "fault_injected": null
+      },
+      "faulted_result": {
+        "status": "error",
+        "error_type": "timeout",
+        "message": "Injected timeout in customer_lookup",
+        "evidence_source": "customer_lookup",
+        "fault_injected": "timeout"
+      },
+      "detected_failure": true,
+      "recovered": true,
+      "unresolved_fault": false,
+      "failure_signal": "timeout",
+      "failure_class": "tool_invocation_failure"
+    },
+    {
+      "tool_name": "policy_lookup",
+      "arguments": {
+        "policy_name": "replacement_policy"
+      },
+      "result": {
+        "status": "ok",
+        "data": {
+          "policy_name": "replacement_policy",
+          "version": "2026-05-current",
+          "text": "Expedited replacement is allowed when an order is delayed by more than 48 hours, the customer is Gold or Platinum tier, and the customer account is active at evaluation time. Inactive accounts are not eligible for expedited replacement.",
+          "effective_date": "2026-05-01"
+        },
+        "evidence_source": "policy_lookup",
+        "freshness": "current",
+        "fault_injected": null
+      },
+      "clean_result": {
+        "status": "ok",
+        "data": {
+          "policy_name": "replacement_policy",
+          "version": "2026-05-current",
+          "text": "Expedited replacement is allowed when an order is delayed by more than 48 hours, the customer is Gold or Platinum tier, and the customer account is active at evaluation time. Inactive accounts are not eligible for expedited replacement.",
+          "effective_date": "2026-05-01"
+        },
+        "evidence_source": "policy_lookup",
+        "freshness": "current",
+        "fault_injected": null
+      },
+      "faulted_result": null,
+      "detected_failure": false,
+      "recovered": false,
+      "unresolved_fault": false,
+      "failure_signal": null,
+      "failure_class": null
+    }
+  ],
+  "final_parsed": {
+    "decision": "not_allowed",
+    "numeric_answer": null,
+    "tool_path": [
+      "functions.order_lookup",
+      "multi_tool_use.parallel",
+      "functions.customer_lookup",
+      "functions.policy_lookup"
+    ],
+    "answer": "Expedited replacement is not allowed for order O-1002 because the customer is Silver tier, while the policy requires Gold or Platinum tier, even though the order is delayed by more than 48 hours and the account is active.",
+    "evidence_used": [
+      "order_lookup: order O-1002 has status delayed, delay_hours 72, customer_id C-002, days_since_purchase 20",
+      "customer_lookup: customer C-002 has tier Silver and status active",
+      "replacement_policy: expedited replacement is allowed only when an order is delayed by more than 48 hours, the customer is Gold or Platinum tier, and the customer account is active"
+    ],
+    "uncertainty": "low",
+    "raw": {
+      "decision": "not_allowed",
+      "numeric_answer": null,
+      "tool_path": [
+        "functions.order_lookup",
+        "multi_tool_use.parallel",
+        "functions.customer_lookup",
+        "functions.policy_lookup"
+      ],
+      "answer": "Expedited replacement is not allowed for order O-1002 because the customer is Silver tier, while the policy requires Gold or Platinum tier, even though the order is delayed by more than 48 hours and the account is active.",
+      "evidence_used": [
+        "order_lookup: order O-1002 has status delayed, delay_hours 72, customer_id C-002, days_since_purchase 20",
+        "customer_lookup: customer C-002 has tier Silver and status active",
+        "replacement_policy: expedited replacement is allowed only when an order is delayed by more than 48 hours, the customer is Gold or Platinum tier, and the customer account is active"
+      ],
+      "uncertainty": "low"
+    }
+  },
+  "rule_result": {
+    "rule_success": true,
+    "expected_decision": "not_allowed",
+    "predicted_decision": "not_allowed",
+    "decision_match": true,
+    "numeric_ok": true,
+    "tools_ok": true,
+    "missing_required_tools": "",
+    "extra_tools_used": "",
+    "tool_efficiency": 1.0,
+    "safe_degradation": false,
+    "rule_reason": "mode=decision; decision_match=True; numeric_ok=True; tools_ok=True; missing=[]; extra=[]"
+  },
+  "judge": {
+    "outcome": "correct",
+    "decision_match": true,
+    "grounded_in_tool_evidence": true,
+    "uses_stale_or_contradictory_evidence": false,
+    "is_safe_degradation": false,
+    "is_silent_failure": false,
+    "confidence": 0.99,
+    "reason": "The final answer matches the expected decision of not_allowed and is supported by current tool evidence: order O-1002 is delayed 72 hours, customer C-002 is Silver and active, and the policy requires Gold or Platinum plus active status. The customer_lookup timeout was recovered, so no stale or unrecovered evidence is relied upon."
+  }
+}

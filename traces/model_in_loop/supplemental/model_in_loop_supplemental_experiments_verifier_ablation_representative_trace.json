@@ -1,0 +1,350 @@
+{
+  "run_id": "verifier_ablation__verifier_on__live_retrieval_001__self_healing__lambda_0.3__seed_11__budget_2",
+  "task": {
+    "task_id": "live_retrieval_001",
+    "category": "retrieval_evidence",
+    "success_mode": "decision",
+    "user_request": "Determine whether expedited replacement is allowed for order O-1001. You must use order_lookup, customer_lookup, and policy_lookup evidence.",
+    "expected_decision": "allowed",
+    "expected_facts": [
+      "O-1001 delay_hours is 60",
+      "C-001 tier is Gold",
+      "C-001 status is active",
+      "replacement policy allows eligible active Gold or Platinum customers after >48h delay"
+    ],
+    "required_tools": [
+      "order_lookup",
+      "customer_lookup",
+      "policy_lookup"
+    ]
+  },
+  "row": {
+    "run_id": "verifier_ablation__verifier_on__live_retrieval_001__self_healing__lambda_0.3__seed_11__budget_2",
+    "task_id": "live_retrieval_001",
+    "category": "retrieval_evidence",
+    "success_mode": "decision",
+    "method": "self_healing",
+    "model": "gpt-5.4-mini",
+    "fault_intensity": 0.3,
+    "seed": 11,
+    "recovery_budget": 2,
+    "fault_scheduled": false,
+    "fault_target_tool": null,
+    "fault_type": null,
+    "fault_injected": false,
+    "expected_decision": "allowed",
+    "predicted_decision": "allowed",
+    "decision_match": true,
+    "numeric_answer": null,
+    "expected_numeric_answer": null,
+    "numeric_ok": true,
+    "tools_ok": true,
+    "missing_required_tools": "",
+    "extra_tools_used": "",
+    "tool_efficiency": 1.0,
+    "task_success": true,
+    "silent_failure": false,
+    "safe_degradation": false,
+    "detected_failure": false,
+    "recovery_success": false,
+    "llm_judge_outcome": "correct",
+    "judge_confidence": 0.99,
+    "grounded_in_tool_evidence": true,
+    "uses_stale_or_contradictory_evidence": false,
+    "model_calls": 3,
+    "tool_calls": 3,
+    "verifier_calls": 3,
+    "judge_calls": 1,
+    "recovery_steps": 0,
+    "input_tokens": 3373,
+    "output_tokens": 353,
+    "estimated_cost_usd": 0.0,
+    "eval_reason": "rule=(mode=decision; decision_match=True; numeric_ok=True; tools_ok=True; missing=[]; extra=[]); judge=correct; The final answer matches the expected decision ('allowed') and is supported by current, consistent tool evidence: order O-1001 is delayed 60 hours, customer C-001 is Gold and active, and the policy allows expedited replacement for delayed >48h orders for active Gold/Platinum customers. All required tools were used and there is no stale, contradictory, or faulty evidence.",
+    "final_answer": "Expedited replacement is allowed for order O-1001.",
+    "tool_path": "order_lookup|multi_tool_use.parallel|customer_lookup|policy_lookup",
+    "tools_used": "order_lookup|customer_lookup|policy_lookup",
+    "experiment": "verifier_ablation",
+    "variant": "verifier_on",
+    "tool_output_verifier_enabled": true,
+    "recovery_budget_level": 2
+  },
+  "events": [
+    {
+      "step": 1,
+      "event_type": "run_start",
+      "details": {
+        "run_id": "live_retrieval_001__self_healing__lambda_0.3__seed_11__budget_2",
+        "task_id": "live_retrieval_001",
+        "method": "self_healing",
+        "fault_intensity": 0.3,
+        "seed": 11,
+        "fault_plan": {
+          "inject": false,
+          "target_tool": null,
+          "fault_type": null
+        }
+      }
+    },
+    {
+      "step": 2,
+      "event_type": "model_call",
+      "details": {
+        "elapsed": 3.0449533462524414,
+        "has_tool_calls": true,
+        "content_preview": "None"
+      }
+    },
+    {
+      "step": 3,
+      "event_type": "tool_call",
+      "details": {
+        "tool_name": "order_lookup",
+        "arguments": {
+          "order_id": "O-1001"
+        },
+        "result_summary": "{'status': 'ok', 'data': {'order_id': 'O-1001', 'customer_id': 'C-001', 'sku': 'SKU-A', 'status': 'delayed', 'delay_hours': 60, 'shipped': True, 'damaged': False, 'days_since_purchase': 14}, 'evidence_source': 'order_lookup', 'freshness': 'current', 'fault_injected': None}"
+      }
+    },
+    {
+      "step": 4,
+      "event_type": "model_call",
+      "details": {
+        "elapsed": 0.756535530090332,
+        "has_tool_calls": true,
+        "content_preview": "None"
+      }
+    },
+    {
+      "step": 5,
+      "event_type": "tool_call",
+      "details": {
+        "tool_name": "customer_lookup",
+        "arguments": {
+          "customer_id": "C-001"
+        },
+        "result_summary": "{'status': 'ok', 'data': {'customer_id': 'C-001', 'tier': 'Gold', 'status': 'active'}, 'evidence_source': 'customer_lookup', 'freshness': 'current', 'fault_injected': None}"
+      }
+    },
+    {
+      "step": 6,
+      "event_type": "tool_call",
+      "details": {
+        "tool_name": "policy_lookup",
+        "arguments": {
+          "policy_name": "replacement_policy"
+        },
+        "result_summary": "{'status': 'ok', 'data': {'policy_name': 'replacement_policy', 'version': '2026-05-current', 'text': 'Expedited replacement is allowed when an order is delayed by more than 48 hours, the customer is Gold or Platinum tier, and the customer account is active at evaluation time. Inactive accounts are not eligible for expedited replacement.', 'effective_date': '2026-05-01'}, 'evidence_source': 'policy_lookup', 'freshness': 'current', 'fault_injected': None}"
+      }
+    },
+    {
+      "step": 7,
+      "event_type": "model_call",
+      "details": {
+        "elapsed": 1.3208248615264893,
+        "has_tool_calls": false,
+        "content_preview": "{\"decision\":\"allowed\",\"numeric_answer\":null,\"tool_path\":[\"functions.order_lookup\",\"multi_tool_use.parallel\",\"functions.customer_lookup\",\"functions.policy_lookup\"],\"answer\":\"Expedited replacement is allowed for order O-1001.\",\"evidence_used\":[\"Order O"
+      }
+    },
+    {
+      "step": 8,
+      "event_type": "final_answer",
+      "details": {
+        "answer": "{\"decision\":\"allowed\",\"numeric_answer\":null,\"tool_path\":[\"functions.order_lookup\",\"multi_tool_use.parallel\",\"functions.customer_lookup\",\"functions.policy_lookup\"],\"answer\":\"Expedited replacement is allowed for order O-1001.\",\"evidence_used\":[\"Order O-1001 is delayed 60 hours and was shipped; customer_id is C-001.\",\"Customer C-001 is Gold tier and active.\",\"Policy says expedited replacement is allowed when an order is delayed by more than 48 hours, the customer is Gold or Platinum tier, and the account is active.\"],\"uncertainty\":\"none\"}"
+      }
+    },
+    {
+      "step": 9,
+      "event_type": "llm_judge",
+      "details": {
+        "elapsed": 1.670196294784546,
+        "judge": {
+          "outcome": "correct",
+          "decision_match": true,
+          "grounded_in_tool_evidence": true,
+          "uses_stale_or_contradictory_evidence": false,
+          "is_safe_degradation": false,
+          "is_silent_failure": false,
+          "confidence": 0.99,
+          "reason": "The final answer matches the expected decision ('allowed') and is supported by current, consistent tool evidence: order O-1001 is delayed 60 hours, customer C-001 is Gold and active, and the policy allows expedited replacement for delayed >48h orders for active Gold/Platinum customers. All required tools were used and there is no stale, contradictory, or faulty evidence."
+        }
+      }
+    }
+  ],
+  "tool_outputs": [
+    {
+      "tool_name": "order_lookup",
+      "arguments": {
+        "order_id": "O-1001"
+      },
+      "result": {
+        "status": "ok",
+        "data": {
+          "order_id": "O-1001",
+          "customer_id": "C-001",
+          "sku": "SKU-A",
+          "status": "delayed",
+          "delay_hours": 60,
+          "shipped": true,
+          "damaged": false,
+          "days_since_purchase": 14
+        },
+        "evidence_source": "order_lookup",
+        "freshness": "current",
+        "fault_injected": null
+      },
+      "clean_result": {
+        "status": "ok",
+        "data": {
+          "order_id": "O-1001",
+          "customer_id": "C-001",
+          "sku": "SKU-A",
+          "status": "delayed",
+          "delay_hours": 60,
+          "shipped": true,
+          "damaged": false,
+          "days_since_purchase": 14
+        },
+        "evidence_source": "order_lookup",
+        "freshness": "current",
+        "fault_injected": null
+      },
+      "faulted_result": null,
+      "detected_failure": false,
+      "recovered": false,
+      "unresolved_fault": false,
+      "failure_signal": null,
+      "failure_class": null
+    },
+    {
+      "tool_name": "customer_lookup",
+      "arguments": {
+        "customer_id": "C-001"
+      },
+      "result": {
+        "status": "ok",
+        "data": {
+          "customer_id": "C-001",
+          "tier": "Gold",
+          "status": "active"
+        },
+        "evidence_source": "customer_lookup",
+        "freshness": "current",
+        "fault_injected": null
+      },
+      "clean_result": {
+        "status": "ok",
+        "data": {
+          "customer_id": "C-001",
+          "tier": "Gold",
+          "status": "active"
+        },
+        "evidence_source": "customer_lookup",
+        "freshness": "current",
+        "fault_injected": null
+      },
+      "faulted_result": null,
+      "detected_failure": false,
+      "recovered": false,
+      "unresolved_fault": false,
+      "failure_signal": null,
+      "failure_class": null
+    },
+    {
+      "tool_name": "policy_lookup",
+      "arguments": {
+        "policy_name": "replacement_policy"
+      },
+      "result": {
+        "status": "ok",
+        "data": {
+          "policy_name": "replacement_policy",
+          "version": "2026-05-current",
+          "text": "Expedited replacement is allowed when an order is delayed by more than 48 hours, the customer is Gold or Platinum tier, and the customer account is active at evaluation time. Inactive accounts are not eligible for expedited replacement.",
+          "effective_date": "2026-05-01"
+        },
+        "evidence_source": "policy_lookup",
+        "freshness": "current",
+        "fault_injected": null
+      },
+      "clean_result": {
+        "status": "ok",
+        "data": {
+          "policy_name": "replacement_policy",
+          "version": "2026-05-current",
+          "text": "Expedited replacement is allowed when an order is delayed by more than 48 hours, the customer is Gold or Platinum tier, and the customer account is active at evaluation time. Inactive accounts are not eligible for expedited replacement.",
+          "effective_date": "2026-05-01"
+        },
+        "evidence_source": "policy_lookup",
+        "freshness": "current",
+        "fault_injected": null
+      },
+      "faulted_result": null,
+      "detected_failure": false,
+      "recovered": false,
+      "unresolved_fault": false,
+      "failure_signal": null,
+      "failure_class": null
+    }
+  ],
+  "final_parsed": {
+    "decision": "allowed",
+    "numeric_answer": null,
+    "tool_path": [
+      "functions.order_lookup",
+      "multi_tool_use.parallel",
+      "functions.customer_lookup",
+      "functions.policy_lookup"
+    ],
+    "answer": "Expedited replacement is allowed for order O-1001.",
+    "evidence_used": [
+      "Order O-1001 is delayed 60 hours and was shipped; customer_id is C-001.",
+      "Customer C-001 is Gold tier and active.",
+      "Policy says expedited replacement is allowed when an order is delayed by more than 48 hours, the customer is Gold or Platinum tier, and the account is active."
+    ],
+    "uncertainty": "none",
+    "raw": {
+      "decision": "allowed",
+      "numeric_answer": null,
+      "tool_path": [
+        "functions.order_lookup",
+        "multi_tool_use.parallel",
+        "functions.customer_lookup",
+        "functions.policy_lookup"
+      ],
+      "answer": "Expedited replacement is allowed for order O-1001.",
+      "evidence_used": [
+        "Order O-1001 is delayed 60 hours and was shipped; customer_id is C-001.",
+        "Customer C-001 is Gold tier and active.",
+        "Policy says expedited replacement is allowed when an order is delayed by more than 48 hours, the customer is Gold or Platinum tier, and the account is active."
+      ],
+      "uncertainty": "none"
+    }
+  },
+  "rule_result": {
+    "rule_success": true,
+    "expected_decision": "allowed",
+    "predicted_decision": "allowed",
+    "decision_match": true,
+    "numeric_ok": true,
+    "tools_ok": true,
+    "missing_required_tools": "",
+    "extra_tools_used": "",
+    "tool_efficiency": 1.0,
+    "safe_degradation": false,
+    "rule_reason": "mode=decision; decision_match=True; numeric_ok=True; tools_ok=True; missing=[]; extra=[]"
+  },
+  "judge": {
+    "outcome": "correct",
+    "decision_match": true,
+    "grounded_in_tool_evidence": true,
+    "uses_stale_or_contradictory_evidence": false,
+    "is_safe_degradation": false,
+    "is_silent_failure": false,
+    "confidence": 0.99,
+    "reason": "The final answer matches the expected decision ('allowed') and is supported by current, consistent tool evidence: order O-1001 is delayed 60 hours, customer C-001 is Gold and active, and the policy allows expedited replacement for delayed >48h orders for active Gold/Platinum customers. All required tools were used and there is no stale, contradictory, or faulty evidence."
+  },
+  "experiment": "verifier_ablation",
+  "variant": "verifier_on",
+  "tool_output_verifier_enabled": true,
+  "recovery_budget_level": 2
+}
