@@ -1,6 +1,0 @@
-ablation_variant,full_success_rate,variant_success_rate,success_drop_vs_full,full_cost_proxy,variant_cost_proxy,cost_change_vs_full,full_trace_events,variant_trace_events
-self_healing_no_budget,99.3,100.0,-0.7,3.3,3.31,0.01,2.18,2.21
-self_healing_no_classifier,99.3,95.7,3.6,3.3,3.45,0.15,2.18,2.45
-self_healing_no_observability,99.3,99.3,0.0,3.3,3.3,0.0,2.18,0.0
-self_healing_no_targeted_recovery,99.3,95.7,3.6,3.3,3.45,0.15,2.18,2.45
-self_healing_no_verifier,99.3,99.3,0.0,3.3,2.3,-1.0,2.18,2.18

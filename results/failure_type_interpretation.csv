@@ -1,8 +1,0 @@
-actual_fault_type,best_method,best_success_rate,self_healing_success_rate,improvement_over_static,improvement_over_retry
-contradictory_evidence,self_healing,100.0,100.0,100.0,14.3
-malformed_output,self_healing,98.2,98.2,98.2,29.4
-partial_response,self_healing,89.7,89.7,89.7,30.7
-schema_drift,self_healing,89.6,89.6,89.6,26.9
-stale_context,self_healing,100.0,100.0,100.0,26.9
-timeout,self_healing,79.3,79.3,79.3,16.4
-unavailable_tool,self_healing,75.3,75.3,75.3,10.9
