@@ -1,0 +1,16 @@
+method,fault_type,executions,success_rate,silent_failure_rate,safe_degradation_rate,detected_failure_rate,recovery_success_rate,fault_scheduled_rate,fault_injected_rate,avg_model_calls,avg_tool_calls,avg_judge_calls,avg_recovery_steps,avg_input_tokens,avg_output_tokens,avg_cost_usd
+full_replanning,malformed_output,3,1.0,0.0,0.0,1.0,1.0,1.0,1.0,3.0,3.6666666666666665,1.0,1.0,3848.3333333333335,384.6666666666667,0.0
+full_replanning,stale_context,4,1.0,0.0,0.0,1.0,1.0,1.0,1.0,2.5,2.5,1.0,1.0,3109.25,323.0,0.0
+full_replanning,timeout,4,1.0,0.0,0.0,1.0,1.0,1.0,1.0,3.0,3.5,1.0,1.0,3783.75,388.25,0.0
+full_replanning,unavailable_tool,2,1.0,0.0,0.0,1.0,1.0,1.0,1.0,2.5,2.5,1.0,1.0,3072.5,320.5,0.0
+full_replanning,wrong_but_plausible,1,1.0,0.0,0.0,1.0,1.0,1.0,1.0,3.0,4.0,1.0,1.0,4063.0,420.0,0.0
+retry_only,malformed_output,3,1.0,0.0,0.0,1.0,0.0,1.0,1.0,4.0,4.666666666666667,1.0,0.0,4713.333333333333,395.3333333333333,0.0
+retry_only,stale_context,4,1.0,0.0,0.0,1.0,0.0,1.0,1.0,3.0,3.0,1.0,0.0,3431.75,340.25,0.0
+retry_only,timeout,4,1.0,0.0,0.0,1.0,1.0,1.0,1.0,3.0,3.5,1.0,1.0,3749.25,387.5,0.0
+retry_only,unavailable_tool,2,1.0,0.0,0.0,1.0,1.0,1.0,1.0,2.5,2.5,1.0,1.0,3035.0,323.0,0.0
+retry_only,wrong_but_plausible,1,1.0,0.0,0.0,1.0,0.0,1.0,1.0,3.0,4.0,1.0,0.0,3717.0,439.0,0.0
+self_healing,malformed_output,3,1.0,0.0,0.0,1.0,1.0,1.0,1.0,3.0,3.6666666666666665,1.0,1.0,3900.0,393.0,0.0
+self_healing,stale_context,4,1.0,0.0,0.0,1.0,1.0,1.0,1.0,2.5,2.5,1.0,1.0,3161.25,323.25,0.0
+self_healing,timeout,4,1.0,0.0,0.0,1.0,1.0,1.0,1.0,3.0,3.5,1.0,1.0,3833.5,379.25,0.0
+self_healing,unavailable_tool,2,1.0,0.0,0.0,1.0,1.0,1.0,1.0,2.5,2.5,1.0,1.0,3121.0,316.0,0.0
+self_healing,wrong_but_plausible,1,1.0,0.0,0.0,1.0,1.0,1.0,1.0,3.0,4.0,1.0,1.0,4058.0,396.0,0.0

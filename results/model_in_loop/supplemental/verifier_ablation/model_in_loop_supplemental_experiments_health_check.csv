@@ -1,0 +1,12 @@
+experiment,group,executions,success_rate,silent_failure_rate,detected_failure_rate,recovery_success_rate,fault_injected_rate,diagnostic_no_faults,diagnostic_all_success
+verifier_ablation,verifier_off,30,0.9666666666666667,0.0,0.2,0.16666666666666666,0.4666666666666667,False,False
+verifier_ablation,verifier_on,30,1.0,0.0,0.4666666666666667,0.4666666666666667,0.4666666666666667,False,True
+budget_sensitivity,full_replanning__budget_1,20,1.0,0.0,0.55,0.55,0.55,False,True
+budget_sensitivity,full_replanning__budget_2,20,1.0,0.0,0.55,0.55,0.55,False,True
+budget_sensitivity,full_replanning__budget_3,20,1.0,0.0,0.55,0.55,0.55,False,True
+budget_sensitivity,retry_only__budget_1,20,1.0,0.0,0.55,0.25,0.55,False,True
+budget_sensitivity,retry_only__budget_2,20,1.0,0.0,0.55,0.25,0.55,False,True
+budget_sensitivity,retry_only__budget_3,20,1.0,0.0,0.55,0.25,0.55,False,True
+budget_sensitivity,self_healing__budget_1,20,1.0,0.0,0.55,0.55,0.55,False,True
+budget_sensitivity,self_healing__budget_2,20,1.0,0.0,0.55,0.55,0.55,False,True
+budget_sensitivity,self_healing__budget_3,20,1.0,0.0,0.55,0.55,0.55,False,True

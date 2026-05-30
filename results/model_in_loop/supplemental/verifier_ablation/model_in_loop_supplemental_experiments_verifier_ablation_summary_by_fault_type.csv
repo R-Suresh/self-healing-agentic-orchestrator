@@ -1,0 +1,11 @@
+variant,fault_type,executions,success_rate,silent_failure_rate,safe_degradation_rate,detected_failure_rate,recovery_success_rate,fault_scheduled_rate,fault_injected_rate,avg_model_calls,avg_tool_calls,avg_judge_calls,avg_recovery_steps,avg_input_tokens,avg_output_tokens,avg_cost_usd
+verifier_off,malformed_output,3,1.0,0.0,0.0,0.0,0.0,1.0,1.0,3.6666666666666665,4.333333333333333,1.0,0.0,4338.666666666667,399.3333333333333,0.0
+verifier_off,stale_context,4,1.0,0.0,0.0,0.0,0.0,1.0,1.0,3.0,3.0,1.0,0.0,3434.5,333.25,0.0
+verifier_off,timeout,4,1.0,0.0,0.0,1.0,1.0,1.0,1.0,3.0,3.5,1.0,1.0,3832.5,381.0,0.0
+verifier_off,unavailable_tool,2,0.5,0.0,0.0,1.0,0.5,1.0,1.0,2.5,2.5,1.0,1.0,3127.5,345.5,0.0
+verifier_off,wrong_but_plausible,1,1.0,0.0,0.0,0.0,0.0,1.0,1.0,3.0,4.0,1.0,0.0,3774.0,408.0,0.0
+verifier_on,malformed_output,3,1.0,0.0,0.0,1.0,1.0,1.0,1.0,3.0,3.6666666666666665,1.0,1.0,3884.6666666666665,387.6666666666667,0.0
+verifier_on,stale_context,4,1.0,0.0,0.0,1.0,1.0,1.0,1.0,2.5,2.5,1.0,1.0,3157.0,320.25,0.0
+verifier_on,timeout,4,1.0,0.0,0.0,1.0,1.0,1.0,1.0,3.0,3.5,1.0,1.0,3832.5,385.0,0.0
+verifier_on,unavailable_tool,2,1.0,0.0,0.0,1.0,1.0,1.0,1.0,2.5,2.5,1.0,1.0,3139.5,324.0,0.0
+verifier_on,wrong_but_plausible,1,1.0,0.0,0.0,1.0,1.0,1.0,1.0,3.0,4.0,1.0,1.0,4128.0,424.0,0.0

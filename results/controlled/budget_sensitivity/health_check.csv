@@ -1,0 +1,6 @@
+check,expected,actual,passed
+row_count,7200,7200,True
+task_count,100,100,True
+method_set,"retry_only,full_replanning,self_healing","full_replanning,retry_only,self_healing",True
+budget_set,"1,2,3,5","1,2,3,5",True
+fault_intensity_set,"0.2,0.4","0.2,0.4",True

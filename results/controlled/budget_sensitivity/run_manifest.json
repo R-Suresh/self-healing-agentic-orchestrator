@@ -1,0 +1,49 @@
+{
+  "experiment": "controlled_recovery_budget_sensitivity",
+  "description": "Controlled budget sweep comparing retry-only, full replanning, and self-healing under matched deterministic fault injection.",
+  "canonical_notebook": "notebooks/self_healing_orchestrator_experiments_extended_canonical.ipynb",
+  "base_notebook": "/content/self-healing-agentic-orchestrator/notebooks/self_healing_orchestrator_experiments.ipynb",
+  "tasks": 100,
+  "methods": [
+    "retry_only",
+    "full_replanning",
+    "self_healing"
+  ],
+  "recovery_budgets": [
+    1,
+    2,
+    3,
+    5
+  ],
+  "fault_intensities": [
+    0.2,
+    0.4
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "expected_rows": 7200,
+  "actual_rows": 7200,
+  "outputs": {
+    "results": [
+      "/content/self-healing-agentic-orchestrator/results/controlled/budget_sensitivity/runs.csv",
+      "/content/self-healing-agentic-orchestrator/results/controlled/budget_sensitivity/summary_overall.csv",
+      "/content/self-healing-agentic-orchestrator/results/controlled/budget_sensitivity/summary_by_intensity.csv",
+      "/content/self-healing-agentic-orchestrator/results/controlled/budget_sensitivity/summary_by_category.csv",
+      "/content/self-healing-agentic-orchestrator/results/controlled/budget_sensitivity/summary_by_fault_type.csv",
+      "/content/self-healing-agentic-orchestrator/results/controlled/budget_sensitivity/health_check.csv"
+    ],
+    "figures": [
+      "/content/self-healing-agentic-orchestrator/figures/controlled/budget_sensitivity/success_by_budget.png",
+      "/content/self-healing-agentic-orchestrator/figures/controlled/budget_sensitivity/success_vs_cost.png",
+      "/content/self-healing-agentic-orchestrator/figures/controlled/budget_sensitivity/success_by_budget_and_intensity.png"
+    ],
+    "tables": [
+      "/content/self-healing-agentic-orchestrator/tables/controlled/budget_sensitivity/success_by_budget_table.tex",
+      "/content/self-healing-agentic-orchestrator/tables/controlled/budget_sensitivity/cost_by_budget_table.tex",
+      "/content/self-healing-agentic-orchestrator/tables/controlled/budget_sensitivity/budget_sensitivity_summary_table.tex"
+    ]
+  }
+}

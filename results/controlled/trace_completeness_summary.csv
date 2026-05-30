@@ -1,0 +1,4 @@
+has_logs,has_faults,has_failure_signal,has_recovery_action,has_verifier_activity,has_final_answer,trace_completeness_score,trace_completeness_max,case_study,task_id,category
+True,True,True,True,True,True,6,6,runtime_tool_failure,workflow_001,multi_step_api_workflow
+True,True,True,True,True,True,6,6,context_evidence_failure,retrieval_001,retrieval_evidence
+True,True,True,True,True,True,6,6,semantic_silent_failure,retrieval_002,retrieval_evidence

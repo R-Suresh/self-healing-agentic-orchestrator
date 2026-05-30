@@ -1,0 +1,10 @@
+method,recovery_budget_level,executions,success_rate,silent_failure_rate,safe_degradation_rate,detected_failure_rate,recovery_success_rate,fault_scheduled_rate,fault_injected_rate,avg_model_calls,avg_tool_calls,avg_judge_calls,avg_recovery_steps,avg_input_tokens,avg_output_tokens,avg_cost_usd
+full_replanning,1,20,1.0,0.0,0.0,0.55,0.55,0.55,0.55,3.0,3.5,1.0,0.55,3681.55,374.25,0.0
+full_replanning,2,20,1.0,0.0,0.0,0.55,0.55,0.55,0.55,3.0,3.5,1.0,0.55,3682.95,374.65,0.0
+full_replanning,3,20,1.0,0.0,0.0,0.55,0.55,0.55,0.55,3.0,3.5,1.0,0.55,3683.05,375.25,0.0
+retry_only,1,20,1.0,0.0,0.0,0.55,0.25,0.55,0.55,3.3,3.7,1.0,0.25,3898.05,373.45,0.0
+retry_only,2,20,1.0,0.0,0.0,0.55,0.25,0.55,0.55,3.3,3.7,1.0,0.25,3896.35,376.7,0.0
+retry_only,3,20,1.0,0.0,0.0,0.55,0.25,0.55,0.55,3.15,3.65,1.0,0.25,3759.45,381.1,0.0
+self_healing,1,20,1.0,0.0,0.0,0.55,0.55,0.55,0.55,3.0,3.5,1.0,0.55,3734.65,378.65,0.0
+self_healing,2,20,1.0,0.0,0.0,0.55,0.55,0.55,0.55,3.0,3.5,1.0,0.55,3714.6,372.05,0.0
+self_healing,3,20,1.0,0.0,0.0,0.55,0.55,0.55,0.55,3.0,3.5,1.0,0.55,3717.4,374.8,0.0

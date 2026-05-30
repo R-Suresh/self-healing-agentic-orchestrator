@@ -1,0 +1,10 @@
+method,category,executions,success_rate,silent_failure_rate,safe_degradation_rate,detected_failure_rate,recovery_success_rate,fault_scheduled_rate,fault_injected_rate,avg_model_calls,avg_tool_calls,avg_judge_calls,avg_recovery_steps,avg_input_tokens,avg_output_tokens,avg_cost_usd
+full_replanning,calculation_verification,10,1.0,0.0,0.0,0.3,0.3,0.3,0.3,2.0,1.0,1.0,0.3,1979.6,219.4,0.0
+full_replanning,multi_step_api_workflow,10,1.0,0.0,0.0,0.8,0.8,0.8,0.8,3.0,4.0,1.0,0.8,3907.8,400.9,0.0
+full_replanning,retrieval_evidence,10,1.0,0.0,0.0,0.3,0.3,0.3,0.3,3.0,3.0,1.0,0.3,3461.3,352.6,0.0
+retry_only,calculation_verification,10,1.0,0.0,0.0,0.3,0.1,0.3,0.3,2.1,1.1,1.0,0.1,2016.3,219.6,0.0
+retry_only,multi_step_api_workflow,10,1.0,0.0,0.0,0.8,0.3,0.8,0.8,3.3,4.3,1.0,0.3,4129.9,407.1,0.0
+retry_only,retrieval_evidence,10,1.0,0.0,0.0,0.3,0.2,0.3,0.3,3.2,3.1,1.0,0.2,3587.7,337.3,0.0
+self_healing,calculation_verification,10,1.0,0.0,0.0,0.3,0.3,0.3,0.3,2.0,1.0,1.0,0.3,2005.1,218.1,0.0
+self_healing,multi_step_api_workflow,10,1.0,0.0,0.0,0.8,0.8,0.8,0.8,3.0,4.0,1.0,0.8,3962.3,404.1,0.0
+self_healing,retrieval_evidence,10,1.0,0.0,0.0,0.3,0.3,0.3,0.3,3.0,3.0,1.0,0.3,3481.5,344.0,0.0
